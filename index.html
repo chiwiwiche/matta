@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mattas Logisctis</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/cards.css">
+  
+  <script src="https://kit.fontawesome.com/1a99deddcf.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="media/logo-prime-preto.svg" alt="">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>            
+    </nav>
+
+    <a onclick="openNav()" class="menu"><button><i class="fa-solid fa-bars"></i></button></a>
+
+    <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="" class="close"><i class="fa-solid fa-xmark"></i></a>
+
+        <div class="overlay-content">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">SERVICES</a>
+          <li><a href="#">JOBS</a></li>
+          <a href="#">CONTACT</a>
+        </div>
+
+    </div>
+  </header>
+
+
+  <div class="slider__wrapper">
+
+    <div class="slider">
+
+      <div class="slide current">
+          <div class="slide__content-wrapper">
+
+            <div class="slide__leftSide">
+              <div class="slide__leftSide-info">
+                <div class="slide__leftSide-infoBackground">
+                  <h2>Starts with your trust</h2>
+                  <!-- <p>Con un alto rendimiento para los servicios de decoloración, Prime Pro Extreme ha desarrollado las innovadoras técnicas de post blanqueamiento, Rubio Platino y Multi, con el poder de aclarar hasta 10 tonos, evitando los tonos anaranjados y amarillos.</p> -->
+                  <!-- <br> -->
+                  <!-- <a href="#">CONTACTANOS</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="slide__rightSide">
+              <img src="media/products/produto-Po20201.webp" alt="" srcset="" class="slide__rightSide-img">
+            </div> -->
+
+          </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__content-wrapper">
+          
+          <div class="slide__leftSide">
+            <div class="slide__leftSide-info">
+              <div class="slide__leftSide-infoBackground">
+                <h2>Continues with our dedication...</h2>
+                <!-- <p>Prime Pro Extreme innova una vez más y amplía sus posibilidades para crear un universo de colores y efectos. Hemos desarrollado una coloración Premium exclusiva para nuestra cartera Profit Of Color®</p> -->
+                <!-- <a href="#"></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="slide__rightSide">
+            <img src="media/products/profit-coloracao2.webp" alt="" srcset="" class="slide__rightSide-img">
+          </div> -->
+
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide__content-wrapper">
+
+          <div class="slide__leftSide">
+            <div class="slide__leftSide-info">
+              <div class="slide__leftSide-infoBackground">
+                <h2>Ends with your satisfaction</h2>
+                <!-- <p>Ofrece un complejo exclusivo de nutrientes, aminoácidos y una mezcla de aceites nobles. Su acción rellena la fibra capilar con masa de reposición de bajo peso molecular, permite la recuperación completa de los cabellos dañados por agresiones químicas y mecánicas.</p> -->
+                <br>
+                <!-- <h2>Your cargo, our priority</h2> -->
+                <p>Your load, our priority.</p>
+                <br>
+                <a href="#">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="slide__rightSide">
+              <img src="media/products/biotanix-novoRepairMask1.webp" alt="" srcset="" class="slide__rightSide-img">
+          </div> -->
+
+        </div>
+      </div>
+
+    </div>
+
+  <div class="buttons">
+    <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+
+
+<div class="cards__wrapper">
+<div class="container">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="java">Java</h2>
+          <p class="java">Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>01</h2>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="python">Python</h2>
+          <p class="python">Python is an interpreted, high-level and general-purpose programming language.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>02</h2>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <span class="stars"></span>
+          <h2 class="cSharp">C#</h2>
+          <p class="cSharp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped and component-oriented programming disciplines.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>03</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<script src="scripts/nav.js"></script>
+<script src="scripts/slide.js"></script>
+
+</body>
+
+</html>

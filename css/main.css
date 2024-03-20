@@ -1,0 +1,227 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Roboto:wght@400;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;700&display=swap');
+
+:root {
+
+  --rojo-prime:#bf0811;
+  --negro-prime: #0c0c0c;
+  --snow-white: #FFFAFA;
+
+  --ff-titles: "Anton", sans-serif;
+  --ff-text: "Roboto", sans-serif;
+
+  --borders: 4px;
+  --space-btw:4rem;
+
+  /* --almarai800: 800;
+  --almarai700: 700; */
+  --roboto700: 700;
+  --roboto300:300;
+  --roboto100:100;
+
+  --fs-xl: clamp(3rem, 4vw + 1rem, 10rem);
+  --fs-xs: clamp(2rem, 2vw + 2rem, 6rem);
+  --fs-titles: 2rem;
+  --fs-sub-tittles: 1.6rem;
+  --fs-highlights: 1.2rem;
+  --fs-text: 1.1rem;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: var(--ff-text);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #808080; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-yellow); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-yellow-darker); 
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+/******************************************DEFAULTS*********************************************/
+/***********************************************************************************************/
+body, html {
+  background: var(--snow-white);
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--negro-prime);
+}
+.parallax {
+  background-image: url("../media/about/prime-team-guatemala.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: var(--space-btw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 75px 5px rgba(0,0,0,0.75) inset;
+}
+.parallax__title{
+  background: rgba(191, 8, 17, 0.5);
+  padding: 3rem 5rem;
+  border-radius: var(--borders);
+  border: 1px solid rgb(191, 8, 17);
+}
+.parallax__title h2{
+  font-size: var(--fs-xs);
+  font-family: var(--ff-titles);
+  text-shadow: 1px 1px 0px #0c0c0c;
+  color: var(--snow-white);
+}
+.about__wrapper{
+  width: 100%;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+.about__container{
+  width: 65%;
+  margin: 0 auto;
+}
+.about__container h2{
+  font-family: var(--ff-titles);
+  font-size: var(--fs-titles);
+  line-height: 100%;
+}
+/* .about__container-text{
+  padding: 2rem;
+  position: relative;
+} */
+
+.about__container p{
+  /* color: #bf0811; */
+
+}
+
+.about__container-underline{
+  width: 30%;
+  height: 5px;
+  background: var(--rojo-prime);
+  margin: 0.4rem 0 1.5rem 0;
+  border-radius: 50%;
+}
+
+
+/*******************************************MEDIAQUERIES*******************************************/
+/* .hithere {
+  animation: hithere 1s ease infinite;
+} */
+@keyframes hithere {
+  30% { transform: scale(1.1); }
+  40%, 60% { transform: rotate(-5deg) scale(1.1); }
+  50% { transform: rotate(5deg) scale(1.1); }
+  70% { transform: rotate(0deg) scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/**************************************************************************************************/
+
+@media (max-width: 1483px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 950px) {/*2 REM padding*/
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 455px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+/***************************************************************************************************/
