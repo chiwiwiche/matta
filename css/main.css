@@ -1,27 +1,36 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Roboto:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;700&display=swap');
+/***************DEFAULTS*****************/
 
 :root {
-
-  --rojo-prime:#bf0811;
-  --negro-prime: #0c0c0c;
-  --snow-white: #FFFAFA;
+  --black:rgb(11, 9, 10);
+  --grey-one:rgb(211, 211, 211);
+  --grey-two:rgb(22, 26, 29);
+  --red-one: rgb(186, 24, 27);
+  --red-two:rgb(164, 22, 26);
+  --red-three:rgb(102, 7, 8);
+  --white-one:rgb(255, 255, 255);
+  --white-two:rgb(245, 243, 244);
 
   --ff-titles: "Anton", sans-serif;
   --ff-text: "Roboto", sans-serif;
 
-  --borders: 4px;
-  --space-btw:4rem;
+  --borders-one: 4px;
+  --borders-two: 8px;
+  --borders-three: 16px;
+  --borders-four: 32px;
+  --borders-five: 64px;
 
-  /* --almarai800: 800;
-  --almarai700: 700; */
+  --space-btw: 6rem;
+
   --roboto700: 700;
-  --roboto300:300;
-  --roboto100:100;
+  --roboto400: 400;
+  --roboto300: 300;
 
+  --fs-xxl: clamp(1rem, 4vw + 1rem, 12rem);
   --fs-xl: clamp(3rem, 4vw + 1rem, 10rem);
-  --fs-xs: clamp(2rem, 2vw + 2rem, 6rem);
+  --fs-xs: clamp(1rem, 1vw + 1rem, 6rem);
+  --fs-s: clamp(1rem, 1vw + 1rem, 2rem);
   --fs-titles: 2rem;
   --fs-sub-tittles: 1.6rem;
   --fs-highlights: 1.2rem;
@@ -37,6 +46,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: var(--roboto400);
 }
 
 *::before,
@@ -73,120 +83,34 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-/* input[type=number] {
-  -moz-appearance: textfield;
-} */
-
-.anton-regular {
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-
-
-/******************************************DEFAULTS*********************************************/
-/***********************************************************************************************/
 body, html {
-  background: var(--snow-white);
+  background: var(--white-one);
   margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: var(--negro-prime);
-}
-.parallax {
-  background-image: url("../media/about/prime-team-guatemala.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: var(--space-btw);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 75px 5px rgba(0,0,0,0.75) inset;
-}
-.parallax__title{
-  background: rgba(191, 8, 17, 0.5);
-  padding: 3rem 5rem;
-  border-radius: var(--borders);
-  border: 1px solid rgb(191, 8, 17);
-}
-.parallax__title h2{
-  font-size: var(--fs-xs);
-  font-family: var(--ff-titles);
-  text-shadow: 1px 1px 0px #0c0c0c;
-  color: var(--snow-white);
-}
-.about__wrapper{
-  width: 100%;
-  padding: 0 3rem;
-  margin-top: 2rem;
-}
-.about__container{
-  width: 65%;
-  margin: 0 auto;
-}
-.about__container h2{
-  font-family: var(--ff-titles);
-  font-size: var(--fs-titles);
-  line-height: 100%;
-}
-/* .about__container-text{
-  padding: 2rem;
-  position: relative;
-} */
-
-.about__container p{
-  /* color: #bf0811; */
-
+  color: var(--black);
 }
 
-.about__container-underline{
-  width: 30%;
-  height: 5px;
-  background: var(--rojo-prime);
-  margin: 0.4rem 0 1.5rem 0;
-  border-radius: 50%;
+/****************************************/
+
+/***************KEYFRAMES****************/
+
+@keyframes cardsAnimation {
+  0% {opacity: 0;} 10% {opacity: 0;}
+  20% {opacity: 0;} 30% {opacity: 0.1;}
+  40% {opacity: 0.3;} 50% {opacity: 0.5;}
+  60% {opacity: 0.6;} 70% {opacity: 0.7;}
+  80% {opacity: 0.8;} 90% {opacity: 0.9;}
+  100% {opacity: 1;}
 }
 
+/***************************************/
 
-/*******************************************MEDIAQUERIES*******************************************/
-/* .hithere {
-  animation: hithere 1s ease infinite;
-} */
-@keyframes hithere {
-  30% { transform: scale(1.1); }
-  40%, 60% { transform: rotate(-5deg) scale(1.1); }
-  50% { transform: rotate(5deg) scale(1.1); }
-  70% { transform: rotate(0deg) scale(1.1); }
-  100% { transform: scale(1); }
-}
 
-/**************************************************************************************************/
+
+/*************MEDIAQUERIES**************/
 
 @media (max-width: 1483px) {
 
@@ -224,4 +148,4 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/***************************************************************************************************/
+/**************************************/

@@ -32,30 +32,35 @@ nav{
   transform: scale(1.1);
 }
 .header .nav-links a{
-  color: var(--negro-prime); 
+  color: var(--black); 
   text-transform: uppercase;
-  /* font-weight: var(--almarai700); */
   letter-spacing: 5px;
   font-family: var(--ff-titles);
   font-size: 0.8rem;
-
 }
 .header .nav-links a:hover{
-  color: var(--rojo-prime);
+  color: var(--red-one);
 }
 .menu {
   display:none;
 }
 .header .menu button{
   margin-left: 20px;
-  padding: 0.6rem 1.5rem;
-  background: var(--rojo-prime);
+  padding: 1rem;
+  background: var(--red-two);
   border: none;
-  border-radius: var(--borders);
+  border-radius: var(--borders-two);
   cursor: pointer;
   transition: all 0.3s ease;
-  color: var(--snow-white);
+  color: var(--white-one);
 }
+.header .menu button i{
+  font-size: 1.5rem;
+}
+.header .menu button:hover{
+  background: var(--red-three);
+}
+
 /*Nav Mobile*/
 .header .overlay {
   height: 100%;
@@ -64,7 +69,9 @@ nav{
   z-index: 10;
   left: 0;
   top: 0;
-  background-color: rgba(12, 12, 12, .90);
+  background-color: rgba(11, 9, 10, 0.9);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
   overflow: hidden;
   transition: all 0.3s ease 0s;
 }
@@ -77,15 +84,14 @@ nav{
 }
 .header .overlay a{
   transition: all 0.3s ease 0s;
-  font-weight: var(--almarai700);
-  color: var(--snow-white);
+  color: var(--white-one);
   font-family: var(--ff-titles);
-  font-size: 1rem;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 10px;
 }
 .header .overlay a:hover, 
 .header .overlay a:focus{
-  color: var(--rojo-prime);
+  color: var(--red-one);
 }
 .header .overlay .close i{
   position: absolute;
@@ -110,7 +116,7 @@ nav{
 
 @media (max-width: 950px) {/*2 REM padding*/
   .header{
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
   nav {
     display: none;
@@ -126,7 +132,7 @@ nav{
 
 @media (max-width: 576px) { /*1 REM padding*/
   .header{
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 @media (max-width: 480px) {
