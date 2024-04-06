@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SSC Logisctis</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/jobs.css">
+
+  
+  <script src="https://kit.fontawesome.com/1a99deddcf.js" crossorigin="anonymous"></script>
+  
+</head>
+
+
+<body>
+
+    <div class="job__driver__wrapper">
+  
+        <div class="job__driver__logo">
+            <img src="media/logos/matttas_logistics_monocromatico_final.png" alt="" srcset="">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Return</span></a>
+        </div>  
+
+        <div class="job__driver__title">
+            <h1>Driver's Position Application</h1>
+        </div>
+
+        <div class="job__driver__introText">
+            <p>Thank you for your interest on work withus in <span class="span_name">MATTA'S LOGISTICS LLC.</span></p><br>
+
+            <p>You're appling for a <span class="span_bold">TEAM DRIVING POSITION</span>, please complete our online application for employment.</p><br>
+
+            <p><span class="span_bold_red">*INCOMPLETE</span> information will delay the processing of your application or prevent it from being submitted<p><br>
+
+            <p>In compliance with Federal and State equal employment opportunity laws, qualified applicants are considered for all positions without regard to: <span class="span_bold">race, color, religion, sex, national origin, age, marital status, veteran status, non-job related disability, or any other protected group status.</span></p>
+        </div>
+
+
+    <form action="submit.php" method="post">
+  
+    <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" pattern="\d{8}-\d{4}-\d{4}" required><br><br>
+
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="tel" id="phone_number" name="phone_number" required><br><br>
+    
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="ssn">Social Security Number:</label><br>
+        <input type="tel" id="ssn" name="ssn" required><br><br>
+    
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+    
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+    
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" required><br><br>
+    
+        <label for="zip_code">Zip Code:</label><br>
+        <input type="text" id="zip_code" name="zip_code" required><br><br>
+    
+        <label for="license_number">Driver's License Number:</label><br>
+        <input type="text" id="license_number" name="license_number" required><br><br>
+    
+        <label for="emergency_contact_name">Emergency Contact Name:</label><br>
+        <input type="text" id="emergency_contact_name" name="emergency_contact_name" required><br><br>
+    
+        <label for="emergency_contact_phone">Emergency Contact Phone Number:</label><br>
+        <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" required><br><br>
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>EMPLOYMENT INFORMATION</legend>
+        <label for="desired_position">Desired Position:</label><br>
+        <select id="desired_position" name="desired_position" required>
+            <option value="">Select One</option>
+            <option value="driver">Driver</option>
+        </select><br><br>
+
+        <label for="availability">Availability:</label><br>
+        <input type="radio" id="Availability_yes" name="Availability" value="yes" required>
+        <label for="Availability_yes">Yes</label>
+        <input type="radio" id="Availability_no" name="Availability" value="no">
+        <label for="Availability_no">No</label><br><br>
+
+        <label>Are you legally authorized to work in the United States?</label><br>
+        <input type="radio" id="legal_authorized_yes" name="legal_authorized" value="yes" required>
+        <label for="legal_authorized_yes">Yes</label>
+        <input type="radio" id="legal_authorized_no" name="legal_authorized" value="no">
+        <label for="legal_authorized_no">No</label><br><br>
+
+        <label>Are you able to provide proof of eligibility to work in the United States?</label><br>
+        <input type="radio" id="proof_eligibility_yes" name="proof_eligibility" value="yes" required>
+        <label for="proof_eligibility_yes">Yes</label>
+        <input type="radio" id="proof_eligibility_no" name="proof_eligibility" value="no">
+        <label for="proof_eligibility_no">No</label><br><br>
+
+        <label>Do you read, write, and speak English?</label><br>
+        <input type="radio" id="english_proficiency_yes" name="english_proficiency" value="yes" required>
+        <label for="english_proficiency_yes">Yes</label>
+        <input type="radio" id="english_proficiency_no" name="english_proficiency" value="no">
+        <label for="english_proficiency_no">No</label><br><br>
+
+        <div id="english_subquestions" style="display: none;">
+            <label for="read">Read:</label>
+            <output for="read" id="read_value">0%</output><br>
+            <input type="range" id="read" name="read" min="0" max="100" step="1" value="0"><br><br>
+
+            <label for="speak">Speak:</label>
+            <output for="speak" id="speak_value">0%</output><br>
+            <input type="range" id="speak" name="speak" min="0" max="100" step="1" value="0"><br><br>
+
+            <label for="write">Write:</label>
+            <output for="write" id="write_value">0%</output><br>
+            <input type="range" id="write" name="write" min="0" max="100" step="1" value="0"><br><br>
+        </div>
+
+        <label>Have you ever worked for this company before?</label><br>
+        <input type="radio" id="worked_before_yes" name="worked_before" value="yes" required>
+        <label for="worked_before_yes">Yes</label>
+        <input type="radio" id="worked_before_no" name="worked_before" value="no">
+        <label for="worked_before_no">No</label><br><br>
+
+        <div id="worked_before_subquestions" style="display: none;">
+            <label for="work_dates">Enter start and end dates:</label><br>
+            <input type="date" id="work_start_date" name="work_start_date"> - 
+            <input type="date" id="work_end_date" name="work_end_date"><br><br>
+
+            <label for="location">Location:</label><br>
+            <select id="location" name="location">
+            <option value="">Select a state</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            </select><br><br>
+
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position"><br><br>
+
+            <label for="reason_for_leaving">Reason for leaving:</label><br>
+            <select id="reason_for_leaving" name="reason_for_leaving">
+            <option value="">Select a reason</option>
+            <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
+            <option value="Poor work environment">Poor work environment</option>
+            <option value="Lack of professional development opportunities">Lack of professional development opportunities</option>
+            <option value="Work-life imbalance">Work-life imbalance</option>
+            <option value="Toxic bosses">Toxic bosses</option>
+            <option value="Personal reasons (relocation, family care, career change)">Personal reasons (relocation, family care, career change)</option>
+            <option value="Layoffs">Layoffs</option>
+            <option value="Lack of confidence in the company">Lack of confidence in the company</option>
+            <option value="Better opportunities at another company">Better opportunities at another company</option>
+            <option value="Other">Other</option>
+            </select><br><br>
+        </div>
+
+        <label for="how_hear_about_us">How did you hear about us?</label><br>
+        <select id="how_hear_about_us" name="how_hear_about_us" required>
+            <option value="">Select an option</option>
+            <option value="Online search">Online search</option>
+            <option value="Social media">Social media</option>
+            <option value="Referral">Referral</option>
+            <option value="Online reviews">Online reviews</option>
+            <option value="Industry publications or events">Industry publications or events</option>
+            <option value="Networking events">Networking events</option>
+            <option value="Online directories">Online directories</option>
+            <option value="Public relations or media coverage">Public relations or media coverage</option>
+            <option value="Previous business">Previous business</option>
+            <option value="Offline marketing">Offline marketing</option>
+        </select><br><br>
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+
+    <fieldset>
+        <legend>EXPERIENCE AND QUALIFICATIONS</legend>
+
+        <label for="years_experience">Years of experience as a truck driver:</label><br>
+        <input type="tel" id="years_experience" name="years_experience" min="0" required><br><br>
+      
+        <label>Types of vehicles operated:</label><br>
+        <input type="checkbox" id="box_truck" name="vehicle_types[]" value="Box truck">
+        <label for="box_truck">Box truck</label><br>
+
+        <input type="checkbox" id="car_carrier_truck" name="vehicle_types[]" value="Flatbed truck">
+        <label for="car_carrier_truck">Car Carrier</label><br>
+
+        <input type="checkbox" id="concrete_mixer" name="vehicle_types[]" value="Cement mixer">
+        <label for="concrete_mixer">Concrete Mixer Truck</label><br>
+
+        <input type="checkbox" id="container_truck" name="vehicle_types[]" value="Other">
+        <label for="container_truck">Container Truck</label><br>
+
+        <input type="checkbox" id="dump_truck" name="vehicle_types[]" value="Dump truck">
+        <label for="dump_truck">Dump truck</label><br>
+
+        <input type="checkbox" id="garbage_truck" name="vehicle_types[]" value="Garbage truck">
+        <label for="garbage_truck">Garbage truck</label><br>
+
+        <input type="checkbox" id="refrigerated_truck" name="vehicle_types[]" value="Refrigerated truck">
+        <label for="refrigerated_truck">Refrigerated truck</label><br>
+
+        <input type="checkbox" id="straight_truck" name="vehicle_types[]" value="Straight truck">
+        <label for="straight_truck">Straight truck</label><br>
+
+        <input type="checkbox" id="tanker_truck" name="vehicle_types[]" value="Tanker truck">
+        <label for="tanker_truck">Tanker truck</label><br>
+
+        <input type="checkbox" id="tractor_trailer" name="vehicle_types[]" value="Tractor-trailer">
+        <label for="tractor_trailer">Tractor-trailer</label><br>
+
+        <input type="checkbox" id="other_vehicle" name="vehicle_types[]" value="Other">
+         <label for="other_vehicle">Other</label><br><br>
+      
+        <label>Have you ever been involved in an accident while operating a commercial vehicle?</label><br>
+        <input type="radio" id="accident_yes" name="accident" value="yes" required>
+        <label for="accident_yes">Yes</label>
+        <input type="radio" id="accident_no" name="accident" value="no">
+        <label for="accident_no">No</label><br><br>
+
+        <div id="accident_details" style="display: none;">
+            <label for="accident_details_text">Please provide details of the accident:</label><br>
+            <textarea id="accident_details_text" name="accident_details" rows="4" cols="50"></textarea><br><br>
+        </div>
+      
+        <label for="special_skills">List any special skills or qualifications relevant to truck driving:</label><br>
+        <textarea id="special_skills" name="special_skills" rows="4" cols="50"></textarea><br><br>
+        
+    </fieldset>
+
+
+
+
+<!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>EMPLOYMENT HISTORY</legend>
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">Recent Record</legend>
+                <label for="company_name_one">Company Name:</label><br>
+                <input type="text" id="company_name_one" name="company_name_one" required><br><br>
+
+                <label for="employment_dates_one">Employment Dates:</label><br>
+                <input type="date" id="start_date_one" name="start_date_one"> -
+                <input type="date" id="end_date_one" name="end_date_one"><br><br>
+
+                <label for="address_one">Address:</label><br>
+                <input type="text" id="address_one" name="address_one" required><br><br>
+
+                <label for="city_one">City:</label><br>
+                <input type="text" id="city_one" name="city_one" required><br><br>
+
+                <label for="state_one">State:</label><br>
+                <input type="text" id="state_one" name="state_one" required><br><br>
+
+                <label for="zip_code_one">Zip Code:</label><br>
+                <input type="tel" id="zip_code_one" name="zip_code_one" required><br><br>
+
+                <label for="country_one">Country:</label><br>
+                <input type="text" id="country_one" name="country_one" required><br><br>
+
+                <label for="phone_one">Phone:</label><br>
+                <input type="tel" id="phone_one" name="phone_one" required><br><br>
+
+                <label for="position_one">Position:</label><br>
+                <input type="text" id="position_one" name="position_one" required><br><br>
+
+                <label for="reason_leaving_one">Reason for leaving:</label><br>
+                <input type="text" id="reason_leaving_one" name="reason_leaving_one" required><br><br>
+
+                <label>Were you terminated/discharged/laid off?</label><br>
+                <input type="radio" id="termination_yes_one" name="termination_one" value="yes" required>
+                <label for="termination_yes_one">Yes</label>
+                <input type="radio" id="termination_no_one" name="termination_one" value="no">
+                <label for="termination_no_one">No</label><br><br>
+
+                <label>Is this your current employer?</label><br>
+                <input type="radio" id="current_employer_yes_one" name="current_employer_one" value="yes" required>
+                <label for="current_employer_yes_one">Yes</label>
+                <input type="radio" id="current_employer_no_one" name="current_employer_one" value="no">
+                <label for="current_employer_no_one">No</label><br><br>
+
+                <label>May we contact this employer at this time?</label><br>
+                <input type="radio" id="contact_employer_yes_one" name="contact_employer_one" value="yes" required>
+                <label for="contact_employer_yes_one">Yes</label>
+                <input type="radio" id="contact_employer_no_one" name="contact_employer_one" value="no">
+                <label for="contact_employer_no_one">No</label><br><br>
+
+                <label>Did you operate a commercial motor vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_one" name="commercial_vehicle_one" value="yes" required>
+                <label for="commercial_vehicle_yes_one">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_one" name="commercial_vehicle_one" value="no">
+                <label for="commercial_vehicle_no_one">No</label><br><br>
+
+                <label>Were you subject to the Federal Motor Carrier or Transport Canada Safety Regulations while employed/contracted by this employer/contractor?</label><br>
+                <input type="radio" id="fmcsr_yes_one" name="fmcsr_one" value="yes" required>
+                <label for="fmcsr_yes_one">Yes</label>
+                <input type="radio" id="fmcsr_no_one" name="fmcsr_one" value="no">
+                <label for="fmcsr_no_one">No</label><br><br>
+
+                <label for="areas_driven_one">Areas Driven:</label><br>
+                <textarea id="areas_driven_one" name="areas_driven_one" rows="4" cols="50"></textarea><br><br>
+
+                <label for="miles_driven_one">Miles driven weekly:</label><br>
+                <input type="tel" id="miles_driven_one" name="miles_driven_one" min="0"><br><br>
+
+                <label for="pay_range_one">Pay Range (cents/mile):</label><br>
+                <input type="tel" id="pay_range_one" name="pay_range_one" min="0"><br><br>
+
+                <label for="common_truck_one">Most common truck driven:</label><br>
+                <input type="checkbox" id="truck_option1_one" name="common_truck_one[]" value="Box truck">
+                <label for="truck_option1_one">Box truck</label><br>
+                <input type="checkbox" id="truck_option2_one" name="common_truck_one[]" value="Concrete Mixer Truck">
+                <label for="truck_option2_one">Concrete Mixer Truck</label><br>
+                <input type="checkbox" id="truck_option3_one" name="common_truck_one[]" value="Container Truck">
+                <label for="truck_option3_one">Container Truck</label><br>
+                <input type="checkbox" id="truck_option4_one" name="common_truck_one[]" value="Dump truck">
+                <label for="truck_option4_one">Dump truck</label><br>
+                <input type="checkbox" id="truck_option5_one" name="common_truck_one[]" value="Garbage truck">
+                <label for="truck_option5_one">Garbage truck</label><br>
+                <input type="checkbox" id="truck_option6_one" name="common_truck_one[]" value="Refrigerated truck">
+                <label for="truck_option6_one">Refrigerated truck</label><br>
+                <input type="checkbox" id="truck_option7_one" name="common_truck_one[]" value="Straight truck">
+                <label for="truck_option7_one">Straight truck</label><br>
+                <input type="checkbox" id="truck_option8_one" name="common_truck_one[]" value="Other">
+                <label for="truck_option8_one">Other</label><br><br>
+
+       
+                <label for="common_trailer_one">Most common trailer driven:</label><br>
+                <input type="checkbox" id="trailer_option1_one" name="common_trailer_one[]" value="Beverage trailer">
+                <label for="trailer_option1_one">Beverage trailer</label><br>
+                <input type="checkbox" id="trailer_option2_one" name="common_trailer_one[]" value="Bottom dump trailer">
+                <label for="trailer_option2_one">Bottom dump trailer</label><br>
+                <input type="checkbox" id="trailer_option3_one" name="common_trailer_one[]" value="Car carrier trailer">
+                <label for="trailer_option3_one">Car carrier trailer</label><br>
+                <input type="checkbox" id="trailer_option4_one" name="common_trailer_one[]" value="Cement mixer trailer">
+                <label for="trailer_option4_one">Cement mixer trailer</label><br>
+                <input type="checkbox" id="trailer_option5_one" name="common_trailer_one[]" value="Conestoga trailer">
+                <label for="trailer_option5_one">Conestoga trailer</label><br>
+                <input type="checkbox" id="trailer_option6_one" name="common_trailer_one[]" value="Container chassis">
+                <label for="trailer_option6_one">Container chassis</label><br>
+                <input type="checkbox" id="trailer_option7_one" name="common_trailer_one[]" value="Double drop trailer">
+                <label for="trailer_option7_one">Double drop trailer</label><br>
+                <input type="checkbox" id="trailer_option8_one" name="common_trailer_one[]" value="Dry van trailer">
+                <label for="trailer_option8_one">Dry van trailer</label><br>
+                <input type="checkbox" id="trailer_option9_one" name="common_trailer_one[]" value="Enclosed trailer">
+                <label for="trailer_option9_one">Enclosed trailer</label><br>
+                <input type="checkbox" id="trailer_option10_one" name="common_trailer_one[]" value="End dump trailer">
+                <label for="trailer_option10_one">End dump trailer</label><br>
+                <input type="checkbox" id="trailer_option11_one" name="common_trailer_one[]" value="Flatbed trailer">
+                <label for="trailer_option11_one">Flatbed trailer</label><br>
+                <input type="checkbox" id="trailer_option12_one" name="common_trailer_one[]" value="Fuel tanker trailer">
+                <label for="trailer_option12_one">Fuel tanker trailer</label><br>
+                <input type="checkbox" id="trailer_option13_one" name="common_trailer_one[]" value="Grain trailer">
+                <label for="trailer_option13_one">Grain trailer</label><br>
+                <input type="checkbox" id="trailer_option14_one" name="common_trailer_one[]" value="Hopper trailer">
+                <label for="trailer_option14_one">Hopper trailer</label><br>
+                <input type="checkbox" id="trailer_option15_one" name="common_trailer_one[]" value="Hotshot trailer">
+                <label for="trailer_option15_one">Hotshot trailer</label><br>
+                <input type="checkbox" id="trailer_option16_one" name="common_trailer_one[]" value="Intermodal container">
+                <label for="trailer_option16_one">Intermodal container</label><br>
+                <input type="checkbox" id="trailer_option17_one" name="common_trailer_one[]" value="Lowboy trailer">
+                <label for="trailer_option17_one">Lowboy trailer</label><br>
+                <input type="checkbox" id="trailer_option18_one" name="common_trailer_one[]" value="Open top container">
+                <label for="trailer_option18_one">Open top container</label><br>
+                <input type="checkbox" id="trailer_option19_one" name="common_trailer_one[]" value="Pacer trailer">
+                <label for="trailer_option19_one">Pacer trailer</label><br>
+                <input type="checkbox" id="trailer_option20_one" name="common_trailer_one[]" value="Power only trailer">
+                <label for="trailer_option20_one">Power only trailer</label><br>
+                <input type="checkbox" id="trailer_option21_one" name="common_trailer_one[]" value="Refrigerated trailer (reefer)">
+                <label for="trailer_option21_one">Refrigerated trailer (reefer)</label><br>
+                <input type="checkbox" id="trailer_option22_one" name="common_trailer_one[]" value="RGN trailer (Removable Gooseneck)">
+                <label for="trailer_option22_one">RGN trailer (Removable Gooseneck)</label><br>
+                <input type="checkbox" id="trailer_option23_one" name="common_trailer_one[]" value="Side dump trailer">
+                <label for="trailer_option23_one">Side dump trailer</label><br>
+                <input type="checkbox" id="trailer_option24_one" name="common_trailer_one[]" value="Stepdeck trailer">
+                <label for="trailer_option24_one">Stepdeck trailer</label><br>
+                <input type="checkbox" id="trailer_option25_one" name="common_trailer_one[]" value="Tank trailer">
+                <label for="trailer_option25_one">Tank trailer</label><br>
+                <input type="checkbox" id="trailer_option26_one" name="common_trailer_one[]" value="Tri(or more)-axle trailer">
+                <label for="trailer_option26_one">Tri(or more)-axle trailer</label><br>
+                <input type="checkbox" id="trailer_option27_one" name="common_trailer_one[]" value="Walking floor trailer">
+                <label for="trailer_option27_one">Walking floor trailer</label><br>
+                <input type="checkbox" id="trailer_option28_one" name="common_trailer_one[]" value="Other">
+                <label for="trailer_option28_one">Other</label><br><br>
+                
+
+                <label for="trailer_length_one">Trailer length:</label><br>
+                <input type="checkbox" id="length_option1_one" name="trailer_length_one[]" value="16 ft">
+                <label for="length_option1_one">16 ft</label><br>
+                <input type="checkbox" id="length_option2_one" name="trailer_length_one[]" value="24 ft">
+                <label for="length_option2_one">24 ft</label><br>
+                <input type="checkbox" id="length_option3_one" name="trailer_length_one[]" value="35 ft">
+                <label for="length_option3_one">35 ft</label><br>
+                <input type="checkbox" id="length_option4_one" name="trailer_length_one[]" value="40 ft">
+                <label for="length_option4_one">40 ft</label><br>
+                <input type="checkbox" id="length_option5_one" name="trailer_length_one[]" value="48 ft">
+                <label for="length_option5_one">48 ft</label><br>
+                <input type="checkbox" id="length_option6_one" name="trailer_length_one[]" value="53 ft">
+                <label for="length_option6_one">53 ft</label><br>
+                <input type="checkbox" id="length_option7_one" name="trailer_length_one[]" value="57 ft">
+                <label for="length_option7_one">57 ft</label><br>
+                <input type="checkbox" id="length_option8_one" name="trailer_length_one[]" value="85 ft">
+                <label for="length_option8_one">85 ft</label><br>
+                <input type="checkbox" id="length_option9_one" name="trailer_length_one[]" value="100 ft">
+                <label for="length_option9_one">100 ft</label><br><br>
+
+            </fieldset>
+
+
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">In-Between Record</legend>
+                <label for="company_name_two">Company Name:</label><br>
+                <input type="text" id="company_name_two" name="company_name_two" required><br><br>
+
+                <label for="employment_dates_two">Employment Dates:</label><br>
+                <input type="date" id="start_date_two" name="start_date_two"> -
+                <input type="date" id="end_date_two" name="end_date_two"><br><br>
+
+                <label for="address_two">Address:</label><br>
+                <input type="text" id="address_two" name="address_two" required><br><br>
+
+                <label for="city_two">City:</label><br>
+                <input type="text" id="city_two" name="city_two" required><br><br>
+
+                <label for="state_two">State:</label><br>
+                <input type="text" id="state_two" name="state_two" required><br><br>
+
+                <label for="zip_code_two">Zip Code:</label><br>
+                <input type="tel" id="zip_code_two" name="zip_code_two" required><br><br>
+
+                <label for="country_two">Country:</label><br>
+                <input type="text" id="country_two" name="country_two" required><br><br>
+
+                <label for="phtwo_two">Phtwo:</label><br>
+                <input type="tel" id="phtwo_two" name="phtwo_two" required><br><br>
+
+                <label for="position_two">Position:</label><br>
+                <input type="text" id="position_two" name="position_two" required><br><br>
+
+                <label for="reason_leaving_two">Reason for leaving:</label><br>
+                <input type="text" id="reason_leaving_two" name="reason_leaving_two" required><br><br>
+
+                <label>Were you terminated/discharged/laid off?</label><br>
+                <input type="radio" id="termination_yes_two" name="termination_two" value="yes" required>
+                <label for="termination_yes_two">Yes</label>
+                <input type="radio" id="termination_no_two" name="termination_two" value="no">
+                <label for="termination_no_two">No</label><br><br>
+
+                <label>Is this your current employer?</label><br>
+                <input type="radio" id="current_employer_yes_two" name="current_employer_two" value="yes" required>
+                <label for="current_employer_yes_two">Yes</label>
+                <input type="radio" id="current_employer_no_two" name="current_employer_two" value="no">
+                <label for="current_employer_no_two">No</label><br><br>
+
+                <label>May we contact this employer at this time?</label><br>
+                <input type="radio" id="contact_employer_yes_two" name="contact_employer_two" value="yes" required>
+                <label for="contact_employer_yes_two">Yes</label>
+                <input type="radio" id="contact_employer_no_two" name="contact_employer_two" value="no">
+                <label for="contact_employer_no_two">No</label><br><br>
+
+                <label>Did you operate a commercial motor vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_two" name="commercial_vehicle_two" value="yes" required>
+                <label for="commercial_vehicle_yes_two">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_two" name="commercial_vehicle_two" value="no">
+                <label for="commercial_vehicle_no_two">No</label><br><br>
+
+                <label>Were you subject to the Federal Motor Carrier or Transport Canada Safety Regulations while employed/contracted by this employer/contractor?</label><br>
+                <input type="radio" id="fmcsr_yes_two" name="fmcsr_two" value="yes" required>
+                <label for="fmcsr_yes_two">Yes</label>
+                <input type="radio" id="fmcsr_no_two" name="fmcsr_two" value="no">
+                <label for="fmcsr_no_two">No</label><br><br>
+
+                <label for="areas_driven_two">Areas Driven:</label><br>
+                <textarea id="areas_driven_two" name="areas_driven_two" rows="4" cols="50"></textarea><br><br>
+
+                <label for="miles_driven_two">Miles driven weekly:</label><br>
+                <input type="tel" id="miles_driven_two" name="miles_driven_two" min="0"><br><br>
+
+                <label for="pay_range_two">Pay Range (cents/mile):</label><br>
+                <input type="tel" id="pay_range_two" name="pay_range_two" min="0"><br><br>
+
+                <label for="common_truck_two">Most common truck driven:</label><br>
+                <input type="checkbox" id="truck_option1_two" name="common_truck_two[]" value="Box truck">
+                <label for="truck_option1_two">Box truck</label><br>
+                <input type="checkbox" id="truck_option2_two" name="common_truck_two[]" value="Concrete Mixer Truck">
+                <label for="truck_option2_two">Concrete Mixer Truck</label><br>
+                <input type="checkbox" id="truck_option3_two" name="common_truck_two[]" value="Container Truck">
+                <label for="truck_option3_two">Container Truck</label><br>
+                <input type="checkbox" id="truck_option4_two" name="common_truck_two[]" value="Dump truck">
+                <label for="truck_option4_two">Dump truck</label><br>
+                <input type="checkbox" id="truck_option5_two" name="common_truck_two[]" value="Garbage truck">
+                <label for="truck_option5_two">Garbage truck</label><br>
+                <input type="checkbox" id="truck_option6_two" name="common_truck_two[]" value="Refrigerated truck">
+                <label for="truck_option6_two">Refrigerated truck</label><br>
+                <input type="checkbox" id="truck_option7_two" name="common_truck_two[]" value="Straight truck">
+                <label for="truck_option7_two">Straight truck</label><br>
+                <input type="checkbox" id="truck_option8_two" name="common_truck_two[]" value="Other">
+                <label for="truck_option8_two">Other</label><br><br>
+
+       
+                <label for="common_trailer_two">Most common trailer driven:</label><br>
+                <input type="checkbox" id="trailer_option1_two" name="common_trailer_two[]" value="Beverage trailer">
+                <label for="trailer_option1_two">Beverage trailer</label><br>
+                <input type="checkbox" id="trailer_option2_two" name="common_trailer_two[]" value="Bottom dump trailer">
+                <label for="trailer_option2_two">Bottom dump trailer</label><br>
+                <input type="checkbox" id="trailer_option3_two" name="common_trailer_two[]" value="Car carrier trailer">
+                <label for="trailer_option3_two">Car carrier trailer</label><br>
+                <input type="checkbox" id="trailer_option4_two" name="common_trailer_two[]" value="Cement mixer trailer">
+                <label for="trailer_option4_two">Cement mixer trailer</label><br>
+                <input type="checkbox" id="trailer_option5_two" name="common_trailer_two[]" value="Ctwostoga trailer">
+                <label for="trailer_option5_two">Ctwostoga trailer</label><br>
+                <input type="checkbox" id="trailer_option6_two" name="common_trailer_two[]" value="Container chassis">
+                <label for="trailer_option6_two">Container chassis</label><br>
+                <input type="checkbox" id="trailer_option7_two" name="common_trailer_two[]" value="Double drop trailer">
+                <label for="trailer_option7_two">Double drop trailer</label><br>
+                <input type="checkbox" id="trailer_option8_two" name="common_trailer_two[]" value="Dry van trailer">
+                <label for="trailer_option8_two">Dry van trailer</label><br>
+                <input type="checkbox" id="trailer_option9_two" name="common_trailer_two[]" value="Enclosed trailer">
+                <label for="trailer_option9_two">Enclosed trailer</label><br>
+                <input type="checkbox" id="trailer_option10_two" name="common_trailer_two[]" value="End dump trailer">
+                <label for="trailer_option10_two">End dump trailer</label><br>
+                <input type="checkbox" id="trailer_option11_two" name="common_trailer_two[]" value="Flatbed trailer">
+                <label for="trailer_option11_two">Flatbed trailer</label><br>
+                <input type="checkbox" id="trailer_option12_two" name="common_trailer_two[]" value="Fuel tanker trailer">
+                <label for="trailer_option12_two">Fuel tanker trailer</label><br>
+                <input type="checkbox" id="trailer_option13_two" name="common_trailer_two[]" value="Grain trailer">
+                <label for="trailer_option13_two">Grain trailer</label><br>
+                <input type="checkbox" id="trailer_option14_two" name="common_trailer_two[]" value="Hopper trailer">
+                <label for="trailer_option14_two">Hopper trailer</label><br>
+                <input type="checkbox" id="trailer_option15_two" name="common_trailer_two[]" value="Hotshot trailer">
+                <label for="trailer_option15_two">Hotshot trailer</label><br>
+                <input type="checkbox" id="trailer_option16_two" name="common_trailer_two[]" value="Intermodal container">
+                <label for="trailer_option16_two">Intermodal container</label><br>
+                <input type="checkbox" id="trailer_option17_two" name="common_trailer_two[]" value="Lowboy trailer">
+                <label for="trailer_option17_two">Lowboy trailer</label><br>
+                <input type="checkbox" id="trailer_option18_two" name="common_trailer_two[]" value="Open top container">
+                <label for="trailer_option18_two">Open top container</label><br>
+                <input type="checkbox" id="trailer_option19_two" name="common_trailer_two[]" value="Pacer trailer">
+                <label for="trailer_option19_two">Pacer trailer</label><br>
+                <input type="checkbox" id="trailer_option20_two" name="common_trailer_two[]" value="Power only trailer">
+                <label for="trailer_option20_two">Power only trailer</label><br>
+                <input type="checkbox" id="trailer_option21_two" name="common_trailer_two[]" value="Refrigerated trailer (reefer)">
+                <label for="trailer_option21_two">Refrigerated trailer (reefer)</label><br>
+                <input type="checkbox" id="trailer_option22_two" name="common_trailer_two[]" value="RGN trailer (Removable Gooseneck)">
+                <label for="trailer_option22_two">RGN trailer (Removable Gooseneck)</label><br>
+                <input type="checkbox" id="trailer_option23_two" name="common_trailer_two[]" value="Side dump trailer">
+                <label for="trailer_option23_two">Side dump trailer</label><br>
+                <input type="checkbox" id="trailer_option24_two" name="common_trailer_two[]" value="Stepdeck trailer">
+                <label for="trailer_option24_two">Stepdeck trailer</label><br>
+                <input type="checkbox" id="trailer_option25_two" name="common_trailer_two[]" value="Tank trailer">
+                <label for="trailer_option25_two">Tank trailer</label><br>
+                <input type="checkbox" id="trailer_option26_two" name="common_trailer_two[]" value="Tri(or more)-axle trailer">
+                <label for="trailer_option26_two">Tri(or more)-axle trailer</label><br>
+                <input type="checkbox" id="trailer_option27_two" name="common_trailer_two[]" value="Walking floor trailer">
+                <label for="trailer_option27_two">Walking floor trailer</label><br>
+                <input type="checkbox" id="trailer_option28_two" name="common_trailer_two[]" value="Other">
+                <label for="trailer_option28_two">Other</label><br><br>
+                
+
+                <label for="trailer_length_two">Trailer length:</label><br>
+                <input type="checkbox" id="length_option1_two" name="trailer_length_two[]" value="16 ft">
+                <label for="length_option1_two">16 ft</label><br>
+                <input type="checkbox" id="length_option2_two" name="trailer_length_two[]" value="24 ft">
+                <label for="length_option2_two">24 ft</label><br>
+                <input type="checkbox" id="length_option3_two" name="trailer_length_two[]" value="35 ft">
+                <label for="length_option3_two">35 ft</label><br>
+                <input type="checkbox" id="length_option4_two" name="trailer_length_two[]" value="40 ft">
+                <label for="length_option4_two">40 ft</label><br>
+                <input type="checkbox" id="length_option5_two" name="trailer_length_two[]" value="48 ft">
+                <label for="length_option5_two">48 ft</label><br>
+                <input type="checkbox" id="length_option6_two" name="trailer_length_two[]" value="53 ft">
+                <label for="length_option6_two">53 ft</label><br>
+                <input type="checkbox" id="length_option7_two" name="trailer_length_two[]" value="57 ft">
+                <label for="length_option7_two">57 ft</label><br>
+                <input type="checkbox" id="length_option8_two" name="trailer_length_two[]" value="85 ft">
+                <label for="length_option8_two">85 ft</label><br>
+                <input type="checkbox" id="length_option9_two" name="trailer_length_two[]" value="100 ft">
+                <label for="length_option9_two">100 ft</label><br><br>
+
+            </fieldset>
+
+            
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">Older Record</legend>
+                <label for="company_name_three">Company Name:</label><br>
+                <input type="text" id="company_name_three" name="company_name_three" required><br><br>
+
+                <label for="employment_dates_three">Employment Dates:</label><br>
+                <input type="date" id="start_date_three" name="start_date_three"> -
+                <input type="date" id="end_date_three" name="end_date_three"><br><br>
+
+                <label for="address_three">Address:</label><br>
+                <input type="text" id="address_three" name="address_three" required><br><br>
+
+                <label for="city_three">City:</label><br>
+                <input type="text" id="city_three" name="city_three" required><br><br>
+
+                <label for="state_three">State:</label><br>
+                <input type="text" id="state_three" name="state_three" required><br><br>
+
+                <label for="zip_code_three">Zip Code:</label><br>
+                <input type="tel" id="zip_code_three" name="zip_code_three" required><br><br>
+
+                <label for="country_three">Country:</label><br>
+                <input type="text" id="country_three" name="country_three" required><br><br>
+
+                <label for="phthree_three">Phthree:</label><br>
+                <input type="tel" id="phthree_three" name="phthree_three" required><br><br>
+
+                <label for="position_three">Position:</label><br>
+                <input type="text" id="position_three" name="position_three" required><br><br>
+
+                <label for="reason_leaving_three">Reason for leaving:</label><br>
+                <input type="text" id="reason_leaving_three" name="reason_leaving_three" required><br><br>
+
+                <label>Were you terminated/discharged/laid off?</label><br>
+                <input type="radio" id="termination_yes_three" name="termination_three" value="yes" required>
+                <label for="termination_yes_three">Yes</label>
+                <input type="radio" id="termination_no_three" name="termination_three" value="no">
+                <label for="termination_no_three">No</label><br><br>
+
+                <label>Is this your current employer?</label><br>
+                <input type="radio" id="current_employer_yes_three" name="current_employer_three" value="yes" required>
+                <label for="current_employer_yes_three">Yes</label>
+                <input type="radio" id="current_employer_no_three" name="current_employer_three" value="no">
+                <label for="current_employer_no_three">No</label><br><br>
+
+                <label>May we contact this employer at this time?</label><br>
+                <input type="radio" id="contact_employer_yes_three" name="contact_employer_three" value="yes" required>
+                <label for="contact_employer_yes_three">Yes</label>
+                <input type="radio" id="contact_employer_no_three" name="contact_employer_three" value="no">
+                <label for="contact_employer_no_three">No</label><br><br>
+
+                <label>Did you operate a commercial motor vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_three" name="commercial_vehicle_three" value="yes" required>
+                <label for="commercial_vehicle_yes_three">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_three" name="commercial_vehicle_three" value="no">
+                <label for="commercial_vehicle_no_three">No</label><br><br>
+
+                <label>Were you subject to the Federal Motor Carrier or Transport Canada Safety Regulations while employed/contracted by this employer/contractor?</label><br>
+                <input type="radio" id="fmcsr_yes_three" name="fmcsr_three" value="yes" required>
+                <label for="fmcsr_yes_three">Yes</label>
+                <input type="radio" id="fmcsr_no_three" name="fmcsr_three" value="no">
+                <label for="fmcsr_no_three">No</label><br><br>
+
+                <label for="areas_driven_three">Areas Driven:</label><br>
+                <textarea id="areas_driven_three" name="areas_driven_three" rows="4" cols="50"></textarea><br><br>
+
+                <label for="miles_driven_three">Miles driven weekly:</label><br>
+                <input type="tel" id="miles_driven_three" name="miles_driven_three" min="0"><br><br>
+
+                <label for="pay_range_three">Pay Range (cents/mile):</label><br>
+                <input type="tel" id="pay_range_three" name="pay_range_three" min="0"><br><br>
+
+                <label for="common_truck_three">Most common truck driven:</label><br>
+                <input type="checkbox" id="truck_option1_three" name="common_truck_three[]" value="Box truck">
+                <label for="truck_option1_three">Box truck</label><br>
+                <input type="checkbox" id="truck_option2_three" name="common_truck_three[]" value="Concrete Mixer Truck">
+                <label for="truck_option2_three">Concrete Mixer Truck</label><br>
+                <input type="checkbox" id="truck_option3_three" name="common_truck_three[]" value="Container Truck">
+                <label for="truck_option3_three">Container Truck</label><br>
+                <input type="checkbox" id="truck_option4_three" name="common_truck_three[]" value="Dump truck">
+                <label for="truck_option4_three">Dump truck</label><br>
+                <input type="checkbox" id="truck_option5_three" name="common_truck_three[]" value="Garbage truck">
+                <label for="truck_option5_three">Garbage truck</label><br>
+                <input type="checkbox" id="truck_option6_three" name="common_truck_three[]" value="Refrigerated truck">
+                <label for="truck_option6_three">Refrigerated truck</label><br>
+                <input type="checkbox" id="truck_option7_three" name="common_truck_three[]" value="Straight truck">
+                <label for="truck_option7_three">Straight truck</label><br>
+                <input type="checkbox" id="truck_option8_three" name="common_truck_three[]" value="Other">
+                <label for="truck_option8_three">Other</label><br><br>
+
+       
+                <label for="common_trailer_three">Most common trailer driven:</label><br>
+                <input type="checkbox" id="trailer_option1_three" name="common_trailer_three[]" value="Beverage trailer">
+                <label for="trailer_option1_three">Beverage trailer</label><br>
+                <input type="checkbox" id="trailer_option2_three" name="common_trailer_three[]" value="Bottom dump trailer">
+                <label for="trailer_option2_three">Bottom dump trailer</label><br>
+                <input type="checkbox" id="trailer_option3_three" name="common_trailer_three[]" value="Car carrier trailer">
+                <label for="trailer_option3_three">Car carrier trailer</label><br>
+                <input type="checkbox" id="trailer_option4_three" name="common_trailer_three[]" value="Cement mixer trailer">
+                <label for="trailer_option4_three">Cement mixer trailer</label><br>
+                <input type="checkbox" id="trailer_option5_three" name="common_trailer_three[]" value="Cthreestoga trailer">
+                <label for="trailer_option5_three">Cthreestoga trailer</label><br>
+                <input type="checkbox" id="trailer_option6_three" name="common_trailer_three[]" value="Container chassis">
+                <label for="trailer_option6_three">Container chassis</label><br>
+                <input type="checkbox" id="trailer_option7_three" name="common_trailer_three[]" value="Double drop trailer">
+                <label for="trailer_option7_three">Double drop trailer</label><br>
+                <input type="checkbox" id="trailer_option8_three" name="common_trailer_three[]" value="Dry van trailer">
+                <label for="trailer_option8_three">Dry van trailer</label><br>
+                <input type="checkbox" id="trailer_option9_three" name="common_trailer_three[]" value="Enclosed trailer">
+                <label for="trailer_option9_three">Enclosed trailer</label><br>
+                <input type="checkbox" id="trailer_option10_three" name="common_trailer_three[]" value="End dump trailer">
+                <label for="trailer_option10_three">End dump trailer</label><br>
+                <input type="checkbox" id="trailer_option11_three" name="common_trailer_three[]" value="Flatbed trailer">
+                <label for="trailer_option11_three">Flatbed trailer</label><br>
+                <input type="checkbox" id="trailer_option12_three" name="common_trailer_three[]" value="Fuel tanker trailer">
+                <label for="trailer_option12_three">Fuel tanker trailer</label><br>
+                <input type="checkbox" id="trailer_option13_three" name="common_trailer_three[]" value="Grain trailer">
+                <label for="trailer_option13_three">Grain trailer</label><br>
+                <input type="checkbox" id="trailer_option14_three" name="common_trailer_three[]" value="Hopper trailer">
+                <label for="trailer_option14_three">Hopper trailer</label><br>
+                <input type="checkbox" id="trailer_option15_three" name="common_trailer_three[]" value="Hotshot trailer">
+                <label for="trailer_option15_three">Hotshot trailer</label><br>
+                <input type="checkbox" id="trailer_option16_three" name="common_trailer_three[]" value="Intermodal container">
+                <label for="trailer_option16_three">Intermodal container</label><br>
+                <input type="checkbox" id="trailer_option17_three" name="common_trailer_three[]" value="Lowboy trailer">
+                <label for="trailer_option17_three">Lowboy trailer</label><br>
+                <input type="checkbox" id="trailer_option18_three" name="common_trailer_three[]" value="Open top container">
+                <label for="trailer_option18_three">Open top container</label><br>
+                <input type="checkbox" id="trailer_option19_three" name="common_trailer_three[]" value="Pacer trailer">
+                <label for="trailer_option19_three">Pacer trailer</label><br>
+                <input type="checkbox" id="trailer_option20_three" name="common_trailer_three[]" value="Power only trailer">
+                <label for="trailer_option20_three">Power only trailer</label><br>
+                <input type="checkbox" id="trailer_option21_three" name="common_trailer_three[]" value="Refrigerated trailer (reefer)">
+                <label for="trailer_option21_three">Refrigerated trailer (reefer)</label><br>
+                <input type="checkbox" id="trailer_option22_three" name="common_trailer_three[]" value="RGN trailer (Removable Gooseneck)">
+                <label for="trailer_option22_three">RGN trailer (Removable Gooseneck)</label><br>
+                <input type="checkbox" id="trailer_option23_three" name="common_trailer_three[]" value="Side dump trailer">
+                <label for="trailer_option23_three">Side dump trailer</label><br>
+                <input type="checkbox" id="trailer_option24_three" name="common_trailer_three[]" value="Stepdeck trailer">
+                <label for="trailer_option24_three">Stepdeck trailer</label><br>
+                <input type="checkbox" id="trailer_option25_three" name="common_trailer_three[]" value="Tank trailer">
+                <label for="trailer_option25_three">Tank trailer</label><br>
+                <input type="checkbox" id="trailer_option26_three" name="common_trailer_three[]" value="Tri(or more)-axle trailer">
+                <label for="trailer_option26_three">Tri(or more)-axle trailer</label><br>
+                <input type="checkbox" id="trailer_option27_three" name="common_trailer_three[]" value="Walking floor trailer">
+                <label for="trailer_option27_three">Walking floor trailer</label><br>
+                <input type="checkbox" id="trailer_option28_three" name="common_trailer_three[]" value="Other">
+                <label for="trailer_option28_three">Other</label><br><br>
+                
+
+                <label for="trailer_length_three">Trailer length:</label><br>
+                <input type="checkbox" id="length_option1_three" name="trailer_length_three[]" value="16 ft">
+                <label for="length_option1_three">16 ft</label><br>
+                <input type="checkbox" id="length_option2_three" name="trailer_length_three[]" value="24 ft">
+                <label for="length_option2_three">24 ft</label><br>
+                <input type="checkbox" id="length_option3_three" name="trailer_length_three[]" value="35 ft">
+                <label for="length_option3_three">35 ft</label><br>
+                <input type="checkbox" id="length_option4_three" name="trailer_length_three[]" value="40 ft">
+                <label for="length_option4_three">40 ft</label><br>
+                <input type="checkbox" id="length_option5_three" name="trailer_length_three[]" value="48 ft">
+                <label for="length_option5_three">48 ft</label><br>
+                <input type="checkbox" id="length_option6_three" name="trailer_length_three[]" value="53 ft">
+                <label for="length_option6_three">53 ft</label><br>
+                <input type="checkbox" id="length_option7_three" name="trailer_length_three[]" value="57 ft">
+                <label for="length_option7_three">57 ft</label><br>
+                <input type="checkbox" id="length_option8_three" name="trailer_length_three[]" value="85 ft">
+                <label for="length_option8_three">85 ft</label><br>
+                <input type="checkbox" id="length_option9_three" name="trailer_length_three[]" value="100 ft">
+                <label for="length_option9_three">100 ft</label><br><br>
+
+            </fieldset>
+
+    </fieldset>
+
+
+    <!--------------------------------------------------------->
+
+
+    <fieldset>
+
+        <legend>EDUCATION</legend>
+        
+        <fieldset class="fieldset__inside__fieldset">
+            <legend class="legend__inside__legend">Trucking School</legend>
+            <label for="school">School:</label><br>
+            <input type="text" id="school" name="school"><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="education_dates">Start and End Date:</label><br>
+            <input type="date" id="education_start_date" name="education_start_date">
+            <input type="date" id="education_end_date" name="education_end_date"><br><br>
+
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="USA">United States of America</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="state">State:</label><br>
+            <select id="state" name="state">
+                <option value="">Select a State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br><br>
+            
+    
+            
+        </fieldset>
+
+
+        <fieldset class="fieldset__inside__fieldset">
+            <legend class="legend__inside__legend">Licenses</legend>
+            <label for="license_number">License Number:</label><br>
+            <input type="text" id="license_number" name="license_number"><br><br>
+
+            <label for="licensing_authority">Licensing Authority:</label><br>
+            <input type="text" id="licensing_authority" name="licensing_authority"><br><br>
+
+            <label for="license_country">Country:</label><br>
+            <input type="text" id="license_country" name="license_country"><br><br>
+
+            <label for="license_class">Type of license:</label><br>
+            <select id="license_class" name="license_class" required>
+                <option value="">Select a license type</option>
+                <option value="Class A">Class A</option>
+                <option value="Class B">Class B</option>
+                <option value="Class C">Class C</option>
+            </select><br>
+
+            <label for="license_expiration_date">License Expiration Date:</label><br>
+            <input type="date" id="license_expiration_date" name="license_expiration_date"><br><br>
+
+            <label for="dot_medical_card_expiration_date">DOT Medical Card Expiration Date:</label><br>
+            <input type="date" id="dot_medical_card_expiration_date" name="dot_medical_card_expiration_date"><br><br>
+
+        </fieldset>
+
+
+        <fieldset class="fieldset__inside__fieldset">
+            <legend class="legend__inside__legend">Endorsements</legend>
+
+            <label>Endorsements on your commercial driver's license:</label><br>
+            <input type="checkbox" id="h_endorsement" name="endorsements[]" value="H Endorsement">
+            <label for="h_endorsement">H (Hazardous Materials)</label><br>
+
+            <input type="checkbox" id="l_endorsement" name="endorsements[]" value="L Endorsement">
+            <label for="l_endorsement">L (Limited Knowledge)</label><br>
+
+            <input type="checkbox" id="n_endorsement" name="endorsements[]" value="N Endorsement">
+            <label for="n_endorsement">N (Tank Vehicle)</label><br>
+
+            <input type="checkbox" id="p_endorsement" name="endorsements[]" value="P Endorsement">
+            <label for="p_endorsement">P (Passenger Vehicle)</label><br>
+
+            <input type="checkbox" id="s_endorsement" name="endorsements[]" value="S Endorsement">
+            <label for="s_endorsement">S (School Bus)</label><br>
+
+            <input type="checkbox" id="t_endorsement" name="endorsements[]" value="T Endorsement">
+            <label for="t_endorsement">T (Double/Triple Trailers)</label><br>
+
+            <input type="checkbox" id="x_endorsement" name="endorsements[]" value="X Endorsement">
+            <label for="x_endorsement">X (Combination Tanker and Hazardous Materials)</label><br>
+
+            <input type="checkbox" id="other_endorsement" name="endorsements[]" value="Other Endorsement">
+            <label for="other_endorsement">Other Endorsement</label><br><br>
+            
+        </fieldset>
+
+        
+    </fieldset>
+
+
+    <!--------------------------------------------------------->
+
+
+    <fieldset>
+
+        <legend>FEDERAL MOTOR CARRIER SAFETY REGULATIONS</legend>
+
+        <label for="disqualified">Under [FMCSR 391.15], are you currently disqualified from driving a commercial motor vehicle? [49 CFR 391.15]</label><br>
+        <input type="radio" id="disqualified_yes" name="disqualified" value="yes">
+        <label for="disqualified_yes">Yes</label>
+        <input type="radio" id="disqualified_no" name="disqualified" value="no">
+        <label for="disqualified_no">No</label><br><br>
+
+        <label for="suspended_revoked">Has your license, permit, or privilege to drive ever been suspended or revoked for any reason? [49 CFR 391.21(b)(9)]</label><br>
+        <input type="radio" id="suspended_revoked_yes" name="suspended_revoked" value="yes">
+        <label for="suspended_revoked_yes">Yes</label>
+        <input type="radio" id="suspended_revoked_no" name="suspended_revoked" value="no">
+        <label for="suspended_revoked_no">No</label><br><br>
+
+        <label for="denied_license">Have you ever been denied a license, permit, or privilege to operate a motor vehicle? [49CFR 391.21(b)(9)]</label><br>
+        <input type="radio" id="denied_license_yes" name="denied_license" value="yes">
+        <label for="denied_license_yes">Yes</label>
+        <input type="radio" id="denied_license_no" name="denied_license" value="no">
+        <label for="denied_license_no">No</label><br><br>
+
+        <label for="drug_test">Within the past two years, have you tested positive, or refused to test, on a pre-employment drug or alcohol test by an employer to whom you applied, but did not obtain, safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules? [49 CFR 40.25(j)]</label><br>
+        <input type="radio" id="drug_test_yes" name="drug_test" value="yes">
+        <label for="drug_test_yes">Yes</label>
+        <input type="radio" id="drug_test_no" name="drug_test" value="no">
+        <label for="drug_test_no">No</label><br><br>
+
+
+        <label>In the past three (3) years, have you ever been convicted of any of the following offenses [49 CFR 391.15]?</label><br><br>
+        <label for="bac_conviction">Driving a commercial motor vehicle with a blood alcohol concentration (BAC) of .04 percent or more:</label><br>
+        <input type="radio" id="bac_conviction_yes" name="bac_conviction" value="yes">
+        <label for="bac_conviction_yes">Yes</label>
+        <input type="radio" id="bac_conviction_no" name="bac_conviction" value="no">
+        <label for="bac_conviction_no">No</label><br><br>
+
+        <label for="dui_conviction">Driving under the influence of alcohol, as prescribed by state law:</label><br>
+        <input type="radio" id="dui_conviction_yes" name="dui_conviction" value="yes">
+        <label for="dui_conviction_yes">Yes</label>
+        <input type="radio" id="dui_conviction_no" name="dui_conviction" value="no">
+        <label for="dui_conviction_no">No</label><br><br>
+
+        <label for="refusal_conviction">Refusal to undergo drug and alcohol testing as required by any jurisdiction for the enforcement of Federal Motor Carrier Safety Act regulations:</label><br>
+        <input type="radio" id="refusal_conviction_yes" name="refusal_conviction" value="yes">
+        <label for="refusal_conviction_yes">Yes</label>
+        <input type="radio" id="refusal_conviction_no" name="refusal_conviction" value="no">
+        <label for="refusal_conviction_no">No</label><br><br>
+
+        <label for="substance_conviction">Driving a commercial motor vehicle under the influence of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, an amphetamine, a narcotic drug, a formulation of an amphetamine, or a derivative of a narcotic drug)</label><br>
+        <input type="radio" id="substance_conviction_yes" name="substance_conviction" value="yes">
+        <label for="substance_conviction_yes">Yes</label>
+        <input type="radio" id="substance_conviction_no" name="substance_conviction" value="no">
+        <label for="substance_conviction_no">No</label><br><br>
+
+        <label for="possession_conviction">Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier)</label><br>
+        <input type="radio" id="possession_conviction_yes" name="possession_conviction" value="yes">
+        <label for="possession_conviction_yes">Yes</label>
+        <input type="radio" id="possession_conviction_no" name="possession_conviction" value="no">
+        <label for="possession_conviction_no">No</label><br><br>
+
+        <label for="accident_leave_conviction">Leaving the scene of an accident while operating a commercial motor vehicle:</label><br>
+        <input type="radio" id="accident_leave_conviction_yes" name="accident_leave_conviction" value="yes">
+        <label for="accident_leave_conviction_yes">Yes</label>
+        <input type="radio" id="accident_leave_conviction_no" name="accident_leave_conviction" value="no">
+        <label for="accident_leave_conviction_no">No</label><br><br>
+
+        <label for="other_felony_conviction">Or any other felony involving the use of a commercial motor vehicle:</label><br>
+        <input type="radio" id="other_felony_conviction_yes" name="other_felony_conviction" value="yes">
+        <label for="other_felony_conviction_yes">Yes</label>
+        <input type="radio" id="other_felony_conviction_no" name="other_felony_conviction" value="no">
+        <label for="other_felony_conviction_no">No</label><br><br>
+
+    </fieldset>
+
+
+    <!--------------------------------------------------------->
+
+
+    <fieldset>
+
+        <legend>VEHICLE ACCIDENT RECORD</legend>
+
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">Recent Record</legend>
+                <label for="accident_incident_one">Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?</label><br>
+                <input type="radio" id="accident_incident_yes_one" name="accident_incident_one" value="yes">
+                <label for="accident_incident_yes_one">Yes</label>
+                <input type="radio" id="accident_incident_no_one" name="accident_incident_one" value="no">
+                <label for="accident_incident_no_one">No</label><br><br>
+        
+                <label for="accident_type_injury_one">Type of Accident / Incident Injury:</label><br>
+                <input type="text" id="accident_type_injury_one" name="accident_type_injury_one"><br><br>
+        
+                <label for="accident_date_one">Date of Accident / Incident:</label><br>
+                <input type="date" id="accident_date_one" name="accident_date_one"><br><br>
+        
+                <label for="hazmat_accident_one">Hazmat Accident / Incident:</label><br>
+                <input type="radio" id="hazmat_accident_yes_one" name="hazmat_accident_one" value="yes">
+                <label for="hazmat_accident_yes_one">Yes</label>
+                <input type="radio" id="hazmat_accident_no_one" name="hazmat_accident_one" value="no">
+                <label for="hazmat_accident_no_one">No</label><br><br>
+        
+                <label for="vehicle_towed_one">Was the vehicle towed away?</label><br>
+                <input type="radio" id="vehicle_towed_yes_one" name="vehicle_towed_one" value="yes">
+                <label for="vehicle_towed_yes_one">Yes</label>
+                <input type="radio" id="vehicle_towed_no_one" name="vehicle_towed_one" value="no">
+                <label for="vehicle_towed_no_one">No</label><br><br>
+        
+                <label for="accident_city_one">City:</label><br>
+                <input type="text" id="accident_city_one" name="accident_city_one"><br><br>
+        
+                <label for="accident_state_one">State:</label><br>
+                <select id="accident_state_one" name="accident_state_one">
+                    <option value="">Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select><br><br>
+        
+                <label for="commercial_vehicle_one">Were you in a commercial vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_accident_one" name="commercial_vehicle_one" value="yes">
+                <label for="commercial_vehicle_yes_accident_one">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_one" name="commercial_vehicle_one" value="no">
+                <label for="commercial_vehicle_no_one">No</label><br><br>
+        
+                <div id="dot_recordable_question_one" style="display: none;">
+                    <label for="dot_recordable_one">Was this a Department of Transportation recordable accident?</label><br>
+                    <input type="radio" id="dot_recordable_yes_one" name="dot_recordable_one" value="yes">
+                    <label for="dot_recordable_yes_one">Yes</label>
+                    <input type="radio" id="dot_recordable_no_one" name="dot_recordable_one" value="no">
+                    <label for="dot_recordable_no_one">No</label><br><br>
+                </div>
+        
+                <label for="at_fault_one">Were you at fault?</label><br>
+                <input type="radio" id="at_fault_yes_one" name="at_fault_one" value="yes">
+                <label for="at_fault_yes_one">Yes</label>
+                <input type="radio" id="at_fault_no_one" name="at_fault_one" value="no">
+                <label for="at_fault_no_one">No</label><br><br>
+        
+                <label for="ticketed_one">Were you ticketed?</label><br>
+                <input type="radio" id="ticketed_yes_one" name="ticketed_one" value="yes">
+                <label for="ticketed_yes_one">Yes</label>
+                <input type="radio" id="ticketed_no_one" name="ticketed_one" value="no">
+                <label for="ticketed_no_one">No</label><br><br>
+        
+                <label for="accident_description_one">Description:</label><br>
+                <textarea id="accident_description_one" name="accident_description_one" rows="4" cols="50"></textarea><br><br>
+        
+            </fieldset>
+
+        
+
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">Old Record</legend>
+                <label for="accident_incident_two">Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?</label><br>
+                <input type="radio" id="accident_incident_yes_two" name="accident_incident_two" value="yes">
+                <label for="accident_incident_yes_two">Yes</label>
+                <input type="radio" id="accident_incident_no_two" name="accident_incident_two" value="no">
+                <label for="accident_incident_no_two">No</label><br><br>
+        
+                <label for="accident_type_injury_two">Type of Accident / Incident Injury:</label><br>
+                <input type="text" id="accident_type_injury_two" name="accident_type_injury_two"><br><br>
+        
+                <label for="accident_date_two">Date of Accident / Incident:</label><br>
+                <input type="date" id="accident_date_two" name="accident_date_two"><br><br>
+        
+                <label for="hazmat_accident_two">Hazmat Accident / Incident:</label><br>
+                <input type="radio" id="hazmat_accident_yes_two" name="hazmat_accident_two" value="yes">
+                <label for="hazmat_accident_yes_two">Yes</label>
+                <input type="radio" id="hazmat_accident_no_two" name="hazmat_accident_two" value="no">
+                <label for="hazmat_accident_no_two">No</label><br><br>
+        
+                <label for="vehicle_towed_two">Was the vehicle towed away?</label><br>
+                <input type="radio" id="vehicle_towed_yes_two" name="vehicle_towed_two" value="yes">
+                <label for="vehicle_towed_yes_two">Yes</label>
+                <input type="radio" id="vehicle_towed_no_two" name="vehicle_towed_two" value="no">
+                <label for="vehicle_towed_no_two">No</label><br><br>
+        
+                <label for="accident_city_two">City:</label><br>
+                <input type="text" id="accident_city_two" name="accident_city_two"><br><br>
+        
+                <label for="accident_state_two">State:</label><br>
+                <select id="accident_state_two" name="accident_state_two">
+                    <option value="">Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select><br><br>
+        
+                <label for="commercial_vehicle_two">Were you in a commercial vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_accident_two" name="commercial_vehicle_two" value="yes">
+                <label for="commercial_vehicle_yes_accident_two">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_two" name="commercial_vehicle_two" value="no">
+                <label for="commercial_vehicle_no_two">No</label><br><br>
+        
+                <div id="dot_recordable_question_two" style="display: ntwo;">
+                    <label for="dot_recordable_two">Was this a Department of Transportation recordable accident?</label><br>
+                    <input type="radio" id="dot_recordable_yes_two" name="dot_recordable_two" value="yes">
+                    <label for="dot_recordable_yes_two">Yes</label>
+                    <input type="radio" id="dot_recordable_no_two" name="dot_recordable_two" value="no">
+                    <label for="dot_recordable_no_two">No</label><br><br>
+                </div>
+        
+                <label for="at_fault_two">Were you at fault?</label><br>
+                <input type="radio" id="at_fault_yes_two" name="at_fault_two" value="yes">
+                <label for="at_fault_yes_two">Yes</label>
+                <input type="radio" id="at_fault_no_two" name="at_fault_two" value="no">
+                <label for="at_fault_no_two">No</label><br><br>
+        
+                <label for="ticketed_two">Were you ticketed?</label><br>
+                <input type="radio" id="ticketed_yes_two" name="ticketed_two" value="yes">
+                <label for="ticketed_yes_two">Yes</label>
+                <input type="radio" id="ticketed_no_two" name="ticketed_two" value="no">
+                <label for="ticketed_no_two">No</label><br><br>
+        
+                <label for="accident_description_two">Description:</label><br>
+                <textarea id="accident_description_two" name="accident_description_two" rows="4" cols="50"></textarea><br><br>
+        
+            </fieldset>
+
+            <fieldset class="fieldset__inside__fieldset">
+                <legend class="legend__inside__legend">Older Record</legend>
+                <label for="accident_incident_three">Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?</label><br>
+                <input type="radio" id="accident_incident_yes_three" name="accident_incident_three" value="yes">
+                <label for="accident_incident_yes_three">Yes</label>
+                <input type="radio" id="accident_incident_no_three" name="accident_incident_three" value="no">
+                <label for="accident_incident_no_three">No</label><br><br>
+        
+                <label for="accident_type_injury_three">Type of Accident / Incident Injury:</label><br>
+                <input type="text" id="accident_type_injury_three" name="accident_type_injury_three"><br><br>
+        
+                <label for="accident_date_three">Date of Accident / Incident:</label><br>
+                <input type="date" id="accident_date_three" name="accident_date_three"><br><br>
+        
+                <label for="hazmat_accident_three">Hazmat Accident / Incident:</label><br>
+                <input type="radio" id="hazmat_accident_yes_three" name="hazmat_accident_three" value="yes">
+                <label for="hazmat_accident_yes_three">Yes</label>
+                <input type="radio" id="hazmat_accident_no_three" name="hazmat_accident_three" value="no">
+                <label for="hazmat_accident_no_three">No</label><br><br>
+        
+                <label for="vehicle_towed_three">Was the vehicle towed away?</label><br>
+                <input type="radio" id="vehicle_towed_yes_three" name="vehicle_towed_three" value="yes">
+                <label for="vehicle_towed_yes_three">Yes</label>
+                <input type="radio" id="vehicle_towed_no_three" name="vehicle_towed_three" value="no">
+                <label for="vehicle_towed_no_three">No</label><br><br>
+        
+                <label for="accident_city_three">City:</label><br>
+                <input type="text" id="accident_city_three" name="accident_city_three"><br><br>
+        
+                <label for="accident_state_three">State:</label><br>
+                <select id="accident_state_three" name="accident_state_three">
+                    <option value="">Select a State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select><br><br>
+        
+                <label for="commercial_vehicle_three">Were you in a commercial vehicle?</label><br>
+                <input type="radio" id="commercial_vehicle_yes_accident_three" name="commercial_vehicle_three" value="yes">
+                <label for="commercial_vehicle_yes_accident_three">Yes</label>
+                <input type="radio" id="commercial_vehicle_no_three" name="commercial_vehicle_three" value="no">
+                <label for="commercial_vehicle_no_three">No</label><br><br>
+        
+                <div id="dot_recordable_question_three" style="display: nthree;">
+                    <label for="dot_recordable_three">Was this a Department of Transportation recordable accident?</label><br>
+                    <input type="radio" id="dot_recordable_yes_three" name="dot_recordable_three" value="yes">
+                    <label for="dot_recordable_yes_three">Yes</label>
+                    <input type="radio" id="dot_recordable_no_three" name="dot_recordable_three" value="no">
+                    <label for="dot_recordable_no_three">No</label><br><br>
+                </div>
+        
+                <label for="at_fault_three">Were you at fault?</label><br>
+                <input type="radio" id="at_fault_yes_three" name="at_fault_three" value="yes">
+                <label for="at_fault_yes_three">Yes</label>
+                <input type="radio" id="at_fault_no_three" name="at_fault_three" value="no">
+                <label for="at_fault_no_three">No</label><br><br>
+        
+                <label for="ticketed_three">Were you ticketed?</label><br>
+                <input type="radio" id="ticketed_yes_three" name="ticketed_three" value="yes">
+                <label for="ticketed_yes_three">Yes</label>
+                <input type="radio" id="ticketed_no_three" name="ticketed_three" value="no">
+                <label for="ticketed_no_three">No</label><br><br>
+        
+                <label for="accident_description_three">Description:</label><br>
+                <textarea id="accident_description_three" name="accident_description_three" rows="4" cols="50"></textarea><br><br>
+        
+            </fieldset>
+
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>TRAFFIC CONVICTIONS \ VIOLATIONS</legend>
+        <label for="moving_violations">Have you had any moving violations or traffic convictions in the past 3 years?</label><br>
+        <input type="radio" id="moving_violations_yes" name="moving_violations" value="yes" required>
+        <label for="moving_violations_yes">Yes</label>
+        <input type="radio" id="moving_violations_no" name="moving_violations" value="no">
+        <label for="moving_violations_no">No</label><br><br>
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>CRIMINAL RECORD</legend>
+        <label for="convicted_of_crime">Have you ever been convicted of a crime?</label><br>
+        <input type="radio" id="convicted_of_crime_yes" name="convicted_of_crime" value="yes" required>
+        <label for="convicted_of_crime_yes">Yes</label>
+        <input type="radio" id="convicted_of_crime_no" name="convicted_of_crime" value="no">
+        <label for="convicted_of_crime_no">No</label><br><br>
+
+        <label for="deferred_prosecutions">Do you have any deferred prosecutions?</label><br>
+        <input type="radio" id="deferred_prosecutions_yes" name="deferred_prosecutions" value="yes" required>
+        <label for="deferred_prosecutions_yes">Yes</label>
+        <input type="radio" id="deferred_prosecutions_no" name="deferred_prosecutions" value="no">
+        <label for="deferred_prosecutions_no">No</label><br><br>
+
+        <label for="criminal_charges_pending">Do you have criminal charges pending?</label><br>
+        <input type="radio" id="criminal_charges_pending_yes" name="criminal_charges_pending" value="yes" required>
+        <label for="criminal_charges_pending_yes">Yes</label>
+        <input type="radio" id="criminal_charges_pending_no" name="criminal_charges_pending" value="no">
+        <label for="criminal_charges_pending_no">No</label><br><br>
+
+        <label for="felony_conviction">Have you ever pled "guilty" to, been convicted of, or pled "no contest" to a felony?</label><br>
+        <input type="radio" id="felony_conviction_yes" name="felony_conviction" value="yes" required>
+        <label for="felony_conviction_yes">Yes</label>
+        <input type="radio" id="felony_conviction_no" name="felony_conviction" value="no">
+        <label for="felony_conviction_no">No</label><br><br>
+
+        <label for="ministers_permit">If you have any felony convictions, do you currently hold a minister's permit to enter or exit Canada?</label><br>
+        <input type="radio" id="ministers_permit_yes" name="ministers_permit" value="yes" required>
+        <label for="ministers_permit_yes">Yes</label>
+        <input type="radio" id="ministers_permit_no" name="ministers_permit" value="no">
+        <label for="ministers_permit_no">No</label><br><br>
+
+        <label for="misdemeanor_conviction">Have you, within the last five years, pled "guilty" to, been convicted of, had prosecution deferred in connection with, or pled "no contest" to a misdemeanor?</label><br>
+        <input type="radio" id="misdemeanor_conviction_yes" name="misdemeanor_conviction" value="yes" required>
+        <label for="misdemeanor_conviction_yes">Yes</label>
+        <input type="radio" id="misdemeanor_conviction_no" name="misdemeanor_conviction" value="no">
+        <label for="misdemeanor_conviction_no">No</label><br><br>
+
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>PSP Disclosure and Authorization</legend>
+        <label>
+            By checking the box, I (a) acknowledge that I have read and understand the PSP Disclosure and Authorization and also have been given the opportunity to copy/print it, and (b) agree to use an electronic signature to demonstrate my consent. An electronic signature is as legally binding as an ink signature.
+            <input type="checkbox" id="consent_checkbox1" name="consent_checkbox1" required>
+        </label>
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>FCRA Disclosure</legend>
+        <label>
+            By checking the box, I (a) acknowledge that I have read and understand the above and also have been given the opportunity to copy/print it, and (b) agree to use an electronic signature to demonstrate my consent. An electronic signature is as legally binding as an ink signature.
+            <input type="checkbox" id="consent_checkbox2" name="consent_checkbox2" required>
+        </label>        
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>FCRA Authorization</legend>
+        <label>
+            By checking the box, I (a) acknowledge that I have read and understand the above and also have been given the opportunity to copy/print it, and (b) agree to use an electronic signature to demonstrate my consent. An electronic signature is as legally binding as an ink signature.
+            <input type="checkbox" id="consent_checkbox3" name="consent_checkbox3" required>
+        </label>
+        
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>Employment Verification Acknowledgment and Release (DOT Drug and Alcohol)</legend>
+        <label>
+            By checking the box, I (a) acknowledge that I have read and understand the above and also have been given the opportunity to copy/print it, and (b) agree to use an electronic signature to demonstrate my consent. An electronic signature is as legally binding as an ink signature.
+            <input type="checkbox" id="consent_checkbox4" name="consent_checkbox4" required>
+        </label>
+    </fieldset>
+
+    <!--------------------------------------------------------->
+
+    <fieldset>
+        <legend>Clearinghouse Release</legend>
+        <label>
+            By checking the box, I (a) acknowledge that I have read and understand the above and also have been given the opportunity to copy/print it, and (b) agree to use an electronic signature to demonstrate my consent. An electronic signature is as legally binding as an ink signature.
+            <input type="checkbox" id="consent_checkbox5" name="consent_checkbox5" required>
+        </label>
+    </fieldset>
+
+    
+
+ 
+    <input type="submit" value="Submit"><br><br><br>
+    
+
+ </form>
+
+
+
+</div><!-- job__driver__wrapper -->
+
+
+
+
+<!-- <script src="signature.js"></script> -->
+<script src="scripts/driversjobs.js"></script>
+</body>
+
+</html>
