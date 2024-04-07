@@ -1,49 +1,27 @@
-var canvas = document.getElementById('canvas-signature');
-var ctx = canvas.getContext("2d");
-var drawing = false;
-var prevX, prevY;
-var currX, currY;
-var customSignature = document.getElementsByName('custom-signature')[0];
+window.onload = function() {
+    var canvas = document.getElementById('firmaCanvas');
+    var limpiarBtn = document.getElementById('limpiarFirma');
+    var ctx = canvas.getContext('2d');
+    var firma = false;
 
-canvas.addEventListener("mousemove", draw);
-canvas.addEventListener("mouseup", stop);
-canvas.addEventListener("mousedown", start);
+    canvas.addEventListener('mousedown', function(e) {
+        firma = true;
+        ctx.beginPath();
+        ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    });
 
-function start(e) {
-  drawing = true;
-}
+    canvas.addEventListener('mousemove', function(e) {
+        if (firma) {
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+        }
+    });
 
-function stop() {
-  drawing = false;
-  prevX = prevY = null;
-  customSignature.value = canvas.toDataURL();
-}
+    canvas.addEventListener('mouseup', function() {
+        firma = false;
+    });
 
-function draw(e) {
-  if (!drawing) {
-    return;
-  }
-
-  // Test for touchmove event, this requires another property.
-  var clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-  var clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
-
-  currX = clientX - canvas.offsetLeft;
-  currY = clientY - canvas.offsetTop;
-
-  if (!prevX && !prevY) {
-    prevX = currX;
-    prevY = currY;
-  }
-
-  ctx.beginPath();
-  ctx.moveTo(prevX, prevY);
-  ctx.lineTo(currX, currY);
-  ctx.strokeStyle = 'black';
-  ctx.lineWidth = 2;
-  ctx.stroke();
-  ctx.closePath();
-
-  prevX = currX;
-  prevY = currY;
-}
+    limpiarBtn.addEventListener('click', function() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+};
