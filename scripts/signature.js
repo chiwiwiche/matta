@@ -1,27 +1,37 @@
-window.onload = function() {
-    var canvas = document.getElementById('firmaCanvas');
-    var limpiarBtn = document.getElementById('limpiarFirma');
-    var ctx = canvas.getContext('2d');
-    var firma = false;
+var canvas = document.getElementById("signature-canvas");
+    var ctx = canvas.getContext("2d");
+    var isDrawing = false;
+    var lastX = 0;
+    var lastY = 0;
 
-    canvas.addEventListener('mousedown', function(e) {
-        firma = true;
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDrawing);
+
+    document.getElementById("clear-signature").addEventListener("click", clearSignature);
+
+    function startDrawing(e) {
+        isDrawing = true;
+        lastX = e.offsetX;
+        lastY = e.offsetY;
+    }
+
+    function draw(e) {
+        if (!isDrawing) return;
         ctx.beginPath();
-        ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-    });
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        lastX = e.offsetX;
+        lastY = e.offsetY;
+    }
 
-    canvas.addEventListener('mousemove', function(e) {
-        if (firma) {
-            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-            ctx.stroke();
-        }
-    });
+    function stopDrawing() {
+        isDrawing = false;
+        document.getElementById("signature-data").value = canvas.toDataURL();
+    }
 
-    canvas.addEventListener('mouseup', function() {
-        firma = false;
-    });
-
-    limpiarBtn.addEventListener('click', function() {
+    function clearSignature() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-    });
-};
+        document.getElementById("signature-data").value = "";
+    }

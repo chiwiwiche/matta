@@ -139,7 +139,7 @@ input[type=range] {
     cursor: pointer; 
 }
 
-input[type=submit] {
+/* input[type=submit] {
     background: var(--red-one);
     padding: 1rem 3rem;
     border: none;
@@ -152,7 +152,7 @@ input[type=submit] {
     font-size: 1.3rem;
     font-family: var(--ff-titles);
     letter-spacing: 1px;
-}
+} */
 select{
     width: 400px;
     padding: 0.3rem 0.5rem;
@@ -170,9 +170,40 @@ textarea{
     resize: vertical;
 }
 
+.signature_wrapper{
+    /* border: 1px solid #ccc;  */
+    /* padding: 10px;  */
+    /* background: green; */
+}
+canvas{
+    border: 1px solid rgb(113, 113, 113);
+    display: block;
+    margin: 0 auto;
+}
+.btn-primary{
+    background: var(--red-one);
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer; 
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    color: var(--white-one);
+    text-shadow: 1px 1px 4px black;
+    font-size: 1.3rem;
+    font-family: var(--ff-titles);
+    letter-spacing: 1px;
+    border-radius: var(--borders-two);
 
-canvas {
-    border: 1px solid #000;
+}
+.btn-primary:hover{
+    background: var(--grey-two);
+}
+.btn-sm{
+    /* background: green; */
+    margin: 0 auto;
+    display: block;
+    padding: 0.5rem 1rem;
 }
 
 
