@@ -73,7 +73,7 @@ legend{
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
-    background: #7FB017;
+    background: #00B2ff;
     padding:  0.5rem 1rem;
     color: var(--white-one);
     border-radius: var(--borders-two);
@@ -170,11 +170,6 @@ textarea{
     resize: vertical;
 }
 
-.signature_wrapper{
-    /* border: 1px solid #ccc;  */
-    /* padding: 10px;  */
-    /* background: green; */
-}
 canvas{
     border: 1px solid rgb(113, 113, 113);
     display: block;
@@ -200,7 +195,6 @@ canvas{
     background: var(--grey-two);
 }
 .btn-sm{
-    /* background: green; */
     margin: 0 auto;
     display: block;
     padding: 0.5rem 1rem;

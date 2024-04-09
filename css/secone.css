@@ -83,6 +83,7 @@
 .secOne-right h3{
     font-size: var(--fs-s);
     color: var(--red-one);
+    text-transform: uppercase;
 }
 .secOne-right h2{
     font-size: var(--fs-xl);

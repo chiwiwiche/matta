@@ -1,0 +1,40 @@
+.secFour-wrapper{
+    /* background: red; */
+    padding: 0 3rem;
+    margin-top: var(--space-btw);
+
+}
+.secFour-container{
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.secFour-left{
+    width: 50%;
+    /* background: yellow; */
+}
+
+.secFour-left h2{
+    font-size: var(--fs-xl);
+    font-family: var(--ff-titles);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.secFour-left h3{
+    font-size: var(--fs-s);
+    color: var(--red-one);
+    text-transform: uppercase;
+}
+.secFour-left p{
+    line-height: 1.5;
+}
+
+.secFour-right{
+    width: 50%;
+}
+.secFour-right img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}

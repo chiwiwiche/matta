@@ -356,10 +356,10 @@
                 <option value="driver">Driver</option>
             </select><br><br>
 
-            <label for="availability">Availability?</label><br>
-            <input type="radio" id="Availability_yes" name="Availability?" value="yes" required>
+            <label for="availability">Are you able to work two weeks out?</label><br>
+            <input type="radio" id="Availability_yes" name="Are you able to work two weeks out?" value="yes" required>
             <label for="Availability_yes">Yes</label>
-            <input type="radio" id="Availability_no" name="Availability?" value="no">
+            <input type="radio" id="Availability_no" name="Are you able to work two weeks out?" value="no">
             <label for="Availability_no">No</label><br><br>
 
             <label>Are you legally authorized to work in the United States?</label><br>
@@ -415,7 +415,8 @@
                 <input type="text" id="position" name="Position in the Company:"><br><br>
 
                 <label for="reason_for_leaving">Reason for leaving:</label><br>
-                <select id="reason_for_leaving" name="Reason for leaving:" required>
+                <input type="text" id="reason_for_leaving" name="Reason for leaving:"><br><br>
+                <!-- <select id="reason_for_leaving" name="Reason for leaving:" required>
                     <option value="">Select a reason</option>
                     <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
                     <option value="Poor work environment">Poor work environment</option>
@@ -427,7 +428,7 @@
                     <option value="Lack of confidence in the company">Lack of confidence in the company</option>
                     <option value="Better opportunities at another company">Better opportunities at another company</option>
                     <option value="Other">Other</option>
-                </select><br><br>
+                </select><br><br> -->
             </div>
 
             <label for="how_hear_about_us">How did you hear about us?</label><br>
@@ -457,7 +458,8 @@
             <input type="tel" id="years_experience" name="Years of experience as a truck driver:" min="0" required><br><br>
 
             <label for="Experience_in_types_of_vehicles_operated">Types of vehicles operated:</label><br>
-            <input type="checkbox" id="truck_option_1_one" name="Experience_in_types_of_vehicles_operated[]" value="Box truck">
+            <input type="text" id="Experience_in_types_of_vehicles_operated" name="Types of vehicles operated:"><br><br>
+            <!-- <input type="checkbox" id="truck_option_1_one" name="Experience_in_types_of_vehicles_operated[]" value="Box truck">
             <label for="truck_option_1_one">Box Truck</label><br>
 
             <input type="checkbox" id="truck_option_2_one" name="Experience_in_types_of_vehicles_operated[]" value="Flatbed truck">
@@ -488,7 +490,7 @@
             <label for="truck_option_10_one">Tractor-trailer</label><br>
 
             <input type="checkbox" id="truck_option_11_one" name="Experience_in_types_of_vehicles_operated[]" value="Other">
-            <label for="truck_option_11_one">Other</label><br><br>
+            <label for="truck_option_11_one">Other</label><br><br> -->
 
             <label>Have you ever been involved in an accident while operating a commercial vehicle?</label><br>
             <input type="radio" id="accident_yes" name="Have you ever been involved in an accident while operating a commercial vehicle?" value="yes" required>
@@ -547,7 +549,8 @@
                     <input type="text" id="company_history_position_one" name="Employment History (Recent Record): Position in the company" required><br><br>
                 
                     <label for="company_history_reason_leaving_one">Reason for leaving:</label><br>
-                    <select id="company_history_reason_leaving_one" name="Employment History (Recent Record): Reason for leaving" required>
+                    <input type="text" id="company_history_reason_leaving_one" name="Employment History (Recent Record): Reason for leaving" required><br><br>
+                    <!-- <select id="company_history_reason_leaving_one" name="Employment History (Recent Record): Reason for leaving" required>
                         <option value="">Select a reason</option>
                         <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
                         <option value="Poor work environment">Poor work environment</option>
@@ -559,13 +562,18 @@
                         <option value="Lack of confidence in the company">Lack of confidence in the company</option>
                         <option value="Better opportunities at another company">Better opportunities at another company</option>
                         <option value="Other">Other</option>
-                    </select><br><br>
+                    </select><br><br> -->
                 
                     <label>Were you terminated/discharged/laid off?</label><br>
                     <input type="radio" id="termination_yes_one" name="Employment History (Recent Record): Were you terminated/discharged/laid off?" value="yes" required>
                     <label for="termination_yes_one">Yes</label>
                     <input type="radio" id="termination_no_one" name="Employment History (Recent Record): Were you terminated/discharged/laid off?" value="no">
                     <label for="termination_no_one">No</label><br><br>
+
+                    <div id="where_you_terminated_why_one" style="display: none;">
+                        <label for="terminated_explain_one">Explain why:</label><br>
+                        <textarea id="terminated_explain_one" name="Employment History (Recent Record): Why you were fired" rows="4" cols="50"></textarea><br><br>
+                    </div>
                 
                     <label>Is this your current employer?</label><br>
                     <input type="radio" id="current_employer_yes_one" name="Employment History (Recent Record): Is this your current employer?" value="yes" required>
@@ -603,8 +611,9 @@
 
 
                         <label for="Employment_History_Recent_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_truck_driven" name="Employment History (Recent Record): Most common truck driven" required><br><br>
 
-                        <input type="checkbox" id="common_truck_driven_1_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Box truck">
+                        <!-- <input type="checkbox" id="common_truck_driven_1_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_one">Box truck</label><br>
                         <input type="checkbox" id="common_truck_driven_2_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Concrete Mixer Truck">
                         <label for="common_truck_driven_2_one">Concrete Mixer Truck</label><br>
@@ -619,12 +628,13 @@
                         <input type="checkbox" id="common_truck_driven_7_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Straight truck">
                         <label for="common_truck_driven_7_one">Straight truck</label><br>
                         <input type="checkbox" id="common_truck_driven_8_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Other">
-                        <label for="common_truck_driven_8_one">Other</label><br><br>
+                        <label for="common_truck_driven_8_one">Other</label><br><br> -->
 
                 
                         <label for="Employment_History_Recent_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_driven" name="Employment History (Recent Record): Most common trailer driven" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_driven_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
+                        <!-- <input type="checkbox" id="common_trailer_driven_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_one">Beverage trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_2_one" name="Employment_History_Recent_Record:_Most_common_trailer_driven[]" value="Bottom dump trailer">
                         <label for="common_trailer_driven_2_one">Bottom dump trailer</label><br>
@@ -680,11 +690,12 @@
                         <label for="common_trailer_driven_27_one">Walking floor trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_28_one" name="Employment_History_Recent_Record:_Most_common_trailer_driven[]" value="Other">
                         <label for="common_trailer_driven_28_one">Other</label><br><br>
-                            
+                             -->
 
                         <label for="Employment_History_Recent_Record:_Most_common_trailer_length">Trailer length:</label><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_length" name="Employment History (Recent Record): Trailer length" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_length_driven_option_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="16 ft">
+                        <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_one">16 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_2_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="24 ft">
                         <label for="common_trailer_length_driven_option_2_one">24 ft</label><br>
@@ -701,7 +712,7 @@
                         <input type="checkbox" id="common_trailer_length_driven_option_8_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="85 ft">
                         <label for="common_trailer_length_driven_option_8_one">85 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_9_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="100 ft">
-                        <label for="common_trailer_length_driven_option_9_one">100 ft</label><br><br>
+                        <label for="common_trailer_length_driven_option_9_one">100 ft</label><br><br> -->
                     </div>
 
                 </fieldset>
@@ -740,7 +751,8 @@
                     <input type="text" id="company_history_position_two" name="Employment History (In-Between Record): Position in the company" required><br><br>
                 
                     <label for="company_history_reason_leaving_two">Reason for leaving:</label><br>
-                    <select id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving" required>
+                    <input type="text" id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving" required><br><br>
+                    <!-- <select id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving" required>
                         <option value="">Select a reason</option>
                         <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
                         <option value="Poor work environment">Poor work environment</option>
@@ -752,13 +764,18 @@
                         <option value="Lack of confidence in the company">Lack of confidence in the company</option>
                         <option value="Better opportunities at another company">Better opportunities at another company</option>
                         <option value="Other">Other</option>
-                    </select><br><br>
+                    </select><br><br> -->
                 
                     <label>Were you terminated/discharged/laid off?</label><br>
                     <input type="radio" id="termination_yes_two" name="Employment History (In-Between Record): Were you terminated/discharged/laid off?" value="yes" required>
                     <label for="termination_yes_two">Yes</label>
                     <input type="radio" id="termination_no_two" name="Employment History (In-Between Record): Were you terminated/discharged/laid off?" value="no">
                     <label for="termination_no_two">No</label><br><br>
+
+                    <div id="where_you_terminated_why_two" style="display: none;">
+                        <label for="terminated_explain_two">Explain why:</label><br>
+                        <textarea id="terminated_explain_two" name="Employment History (In-Between Record): Why you were fired" rows="4" cols="50"></textarea><br><br>
+                    </div>
                 
                     <label>May we contact this employer at this time?</label><br>
                     <input type="radio" id="contact_employer_yes_two" name="Employment History (In-Between Record): May we contact this employer at this time?" value="yes" required>
@@ -790,8 +807,9 @@
 
 
                         <label for="Employment_History_In-Between_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_truck_driven" name="Employment History (In-Between Record): Most common truck driven" required><br><br>
 
-                        <input type="checkbox" id="common_truck_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Box truck">
+                        <!-- <input type="checkbox" id="common_truck_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_two">Box truck</label><br>
                         <input type="checkbox" id="common_truck_driven_2_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Concrete Mixer Truck">
                         <label for="common_truck_driven_2_two">Concrete Mixer Truck</label><br>
@@ -806,12 +824,13 @@
                         <input type="checkbox" id="common_truck_driven_7_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Straight truck">
                         <label for="common_truck_driven_7_two">Straight truck</label><br>
                         <input type="checkbox" id="common_truck_driven_8_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Other">
-                        <label for="common_truck_driven_8_two">Other</label><br><br>
+                        <label for="common_truck_driven_8_two">Other</label><br><br> -->
 
                 
                         <label for="Employment_History_In-Between_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_driven" name="Employment History (In-Between Record): Most common trailer driven" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
+                        <!-- <input type="checkbox" id="common_trailer_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_two">Beverage trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_2_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Bottom dump trailer">
                         <label for="common_trailer_driven_2_two">Bottom dump trailer</label><br>
@@ -866,12 +885,13 @@
                         <input type="checkbox" id="common_trailer_driven_27_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Walking floor trailer">
                         <label for="common_trailer_driven_27_two">Walking floor trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_28_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Other">
-                        <label for="common_trailer_driven_28_two">Other</label><br><br>
+                        <label for="common_trailer_driven_28_two">Other</label><br><br> -->
                             
 
                         <label for="Employment_History_In-Between_Record:_Most_common_trailer_length">Trailer length:</label><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_length" name="Employment History (In-Between Record): Most common trailer length" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_length_driven_option_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="16 ft">
+                        <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_two">16 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_2_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="24 ft">
                         <label for="common_trailer_length_driven_option_2_two">24 ft</label><br>
@@ -888,7 +908,7 @@
                         <input type="checkbox" id="common_trailer_length_driven_option_8_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="85 ft">
                         <label for="common_trailer_length_driven_option_8_two">85 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_9_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="100 ft">
-                        <label for="common_trailer_length_driven_option_9_two">100 ft</label><br><br>
+                        <label for="common_trailer_length_driven_option_9_two">100 ft</label><br><br> -->
                     </div>
 
                 </fieldset>
@@ -927,7 +947,9 @@
                     <input type="text" id="company_history_position_three" name="Employment History (Older Record): Position in the company"><br><br>
                 
                     <label for="company_history_reason_leaving_three">Reason for leaving:</label><br>
-                    <select id="company_history_reason_leaving_three" name="Employment History (Older Record): Reason for leaving" required>
+                    <input type="text" id="company_history_reason_leaving_three" name="Employment History (Older Record): Reason for leaving"><br><br>
+                    
+                    <!-- <select id="company_history_reason_leaving_three" name="Employment History (Older Record): Reason for leaving" required>
                         <option value="">Select a reason</option>
                         <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
                         <option value="Poor work environment">Poor work environment</option>
@@ -939,13 +961,18 @@
                         <option value="Lack of confidence in the company">Lack of confidence in the company</option>
                         <option value="Better opportunities at another company">Better opportunities at another company</option>
                         <option value="Other">Other</option>
-                    </select><br><br>
+                    </select><br><br> -->
                 
                     <label>Were you terminated/discharged/laid off?</label><br>
                     <input type="radio" id="termination_yes_three" name="Employment History (Older Record): Were you terminated/discharged/laid off?" value="yes">
                     <label for="termination_yes_three">Yes</label>
                     <input type="radio" id="termination_no_three" name="Employment History (Older Record): Were you terminated/discharged/laid off?" value="no">
                     <label for="termination_no_three">No</label><br><br>
+
+                    <div id="where_you_terminated_why_three" style="display: none;">
+                        <label for="terminated_explain_three">Explain why:</label><br>
+                        <textarea id="terminated_explain_three" name="Employment History (Older Record): Why you were fired" rows="4" cols="50"></textarea><br><br>
+                    </div>
                 
                     <label>May we contact this employer at this time?</label><br>
                     <input type="radio" id="contact_employer_yes_three" name="Employment History (Older Record): May we contact this employer at this time?" value="yes">
@@ -977,8 +1004,9 @@
 
 
                         <label for="Employment_History_Older_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_truck_driven" name="Employment History (Older Record): Most common truck driven" required><br><br>
 
-                        <input type="checkbox" id="common_truck_driven_1_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Box truck">
+                        <!-- <input type="checkbox" id="common_truck_driven_1_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_three">Box truck</label><br>
                         <input type="checkbox" id="common_truck_driven_2_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Concrete Mixer Truck">
                         <label for="common_truck_driven_2_three">Concrete Mixer Truck</label><br>
@@ -993,12 +1021,13 @@
                         <input type="checkbox" id="common_truck_driven_7_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Straight truck">
                         <label for="common_truck_driven_7_three">Straight truck</label><br>
                         <input type="checkbox" id="common_truck_driven_8_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Other">
-                        <label for="common_truck_driven_8_three">Other</label><br><br>
+                        <label for="common_truck_driven_8_three">Other</label><br><br> -->
 
                 
                         <label for="Employment_History_Older_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_driven" name="Employment History (Older Record): Most common trailer driven" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_driven_1_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
+                        <!-- <input type="checkbox" id="common_trailer_driven_1_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_three">Beverage trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_2_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Bottom dump trailer">
                         <label for="common_trailer_driven_2_three">Bottom dump trailer</label><br>
@@ -1053,12 +1082,13 @@
                         <input type="checkbox" id="common_trailer_driven_27_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Walking floor trailer">
                         <label for="common_trailer_driven_27_three">Walking floor trailer</label><br>
                         <input type="checkbox" id="common_trailer_driven_28_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Other">
-                        <label for="common_trailer_driven_28_three">Other</label><br><br>
+                        <label for="common_trailer_driven_28_three">Other</label><br><br> -->
                             
 
                         <label for="Employment_History_Older_Record:_Most_common_trailer_length">Trailer length:</label><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_length" name="Employment History (Older Record): Most common Trailer length" required><br><br>
 
-                        <input type="checkbox" id="common_trailer_length_driven_option_1_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="16 ft">
+                        <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_three">16 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_2_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="24 ft">
                         <label for="common_trailer_length_driven_option_2_three">24 ft</label><br>
@@ -1075,7 +1105,7 @@
                         <input type="checkbox" id="common_trailer_length_driven_option_8_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="85 ft">
                         <label for="common_trailer_length_driven_option_8_three">85 ft</label><br>
                         <input type="checkbox" id="common_trailer_length_driven_option_9_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="100 ft">
-                        <label for="common_trailer_length_driven_option_9_three">100 ft</label><br><br>
+                        <label for="common_trailer_length_driven_option_9_three">100 ft</label><br><br> -->
                     </div>
 
                 </fieldset>
@@ -1103,73 +1133,87 @@
                 <input type="date" id="education_end_date" name="Trucking School End Date" required><br><br>
 
 
-                <label for="school_country">School Country:</label><br>
-                <select id="school_country" name="Trucking School Country" required>
+                <label for="School Country:">School Country:</label><br>
+                <!-- <select id="school_country" name="Trucking School Country" required>
                     <option value="">Select a Country</option>
                     <option value="USA">United States of America</option>
                     <option value="other">Other</option>
-                </select><br><br>
+                </select><br><br> -->
+                <input type="radio" id="school_country_usa" name="School Country:" value="USA">
+                <label for="school_country_usa">USA</label>
+                <input type="radio" id="school_country_other" name="School Country:" value="Other">
+                <label for="school_country_other">Other</label><br><br>
 
-                <label for="school_address">School Address:</label><br>
-                <input type="text" id="school_address" name="Trucking School Address"><br><br>
+                <div id="school_address_usa" style="display: none;">
+                    <label for="school_address">School Address:</label><br>
+                    <input type="text" id="school_address" name="Trucking School Address"><br><br>
 
-                <label for="school_city">School City:</label><br>
-                <input type="text" id="school_city" name="Trucking School City" required><br><br>
+                    <label for="school_city">School City:</label><br>
+                    <input type="text" id="school_city" name="Trucking School City"><br><br>
 
-                <label for="school_state">School State:</label><br>
-                <select id="school_state" name="Trucking School State" required>
-                    <option value="">Select a State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                </select><br><br>
+                    <label for="school_state">School State:</label><br>
+                    <select id="school_state" name="Trucking School State">
+                        <option value="">Select a State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select><br><br>
+        
+                </div>
+                
+                <div id="school_country_other_text" style="display: none;">
+                    <label for="country_of_your_school">Country of your Drivers School:</label><br>
+                    <input type="text" id="country_of_your_school" name="Country of your Drivers School:"><br><br>
+                </div>
+
+                
                 
             </fieldset>
 
@@ -1219,29 +1263,41 @@
                 <legend class="legend__inside__legend">Endorsements</legend>
 
                 <label for="Endorsements_on_your_commercial_driver's_license">Endorsements on your commercial driver's license:</label><br>
-                <input type="checkbox" id="h_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="H Endorsement">
-                <label for="h_endorsement">H (Hazardous Materials)</label><br>
+                <input type="radio" id="endorsements_on_license_yes" name="Endorsements_on_your_commercial_driver's_license" value="yes">
+                <label for="endorsements_on_license_yes">Yes</label>
+                <input type="radio" id="endorsements_on_license_no" name="Endorsements_on_your_commercial_driver's_license" value="no">
+                <label for="endorsements_on_license_no">No</label><br><br>
 
-                <input type="checkbox" id="l_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="L Endorsement">
-                <label for="l_endorsement">L (Limited Knowledge)</label><br>
+                <div id="endorsements_list" style="display: none;">
+                    <input type="checkbox" id="h_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="H Endorsement">
+                    <label for="h_endorsement">H (Hazardous Materials)</label><br>
 
-                <input type="checkbox" id="n_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="N Endorsement">
-                <label for="n_endorsement">N (Tank Vehicle)</label><br>
+                    <input type="checkbox" id="l_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="L Endorsement">
+                    <label for="l_endorsement">L (Limited Knowledge)</label><br>
 
-                <input type="checkbox" id="p_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="P Endorsement">
-                <label for="p_endorsement">P (Passenger Vehicle)</label><br>
+                    <input type="checkbox" id="n_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="N Endorsement">
+                    <label for="n_endorsement">N (Tank Vehicle)</label><br>
 
-                <input type="checkbox" id="s_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="S Endorsement">
-                <label for="s_endorsement">S (School Bus)</label><br>
+                    <input type="checkbox" id="p_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="P Endorsement">
+                    <label for="p_endorsement">P (Passenger Vehicle)</label><br>
 
-                <input type="checkbox" id="t_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="T Endorsement">
-                <label for="t_endorsement">T (Double/Triple Trailers)</label><br>
+                    <input type="checkbox" id="s_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="S Endorsement">
+                    <label for="s_endorsement">S (School Bus)</label><br>
 
-                <input type="checkbox" id="x_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="X Endorsement">
-                <label for="x_endorsement">X (Combination Tanker and Hazardous Materials)</label><br>
+                    <input type="checkbox" id="t_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="T Endorsement">
+                    <label for="t_endorsement">T (Double/Triple Trailers)</label><br>
 
-                <input type="checkbox" id="other_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="Other Endorsement">
-                <label for="other_endorsement">Other Endorsement</label><br><br>
+                    <input type="checkbox" id="x_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="X Endorsement">
+                    <label for="x_endorsement">X (Combination Tanker and Hazardous Materials)</label><br>
+
+                    <input type="checkbox" id="other_endorsement" name="Endorsements_on_your_commercial_driver's_license[]" value="Other Endorsement">
+                    <label for="other_endorsement">Other Endorsement</label><br><br>
+                </div>
+
+                <div id="endorsements_type" style="display: none;">
+                    <label for="endorsements_type_text">Enter your Endorsements Type:</label><br>
+                    <input type="text" id="endorsements_type_text" name="Other Endorsement Type:"><br><br>
+                </div>
                 
             </fieldset>
 
@@ -1254,11 +1310,20 @@
         <fieldset>
             <legend>FEDERAL MOTOR CARRIER SAFETY REGULATIONS</legend>
 
+            <!--------------------------------------------------------->
+
             <label for="fmcsar_disqualified">Under [FMCSR 391.15], are you currently disqualified from driving a commercial motor vehicle? [49 CFR 391.15]</label><br>
             <input type="radio" id="fmcsar_disqualified_yes" name="Under [FMCSR 391.15], are you currently disqualified from driving a commercial motor vehicle? [49 CFR 391.15]" value="yes" required>
             <label for="fmcsar_disqualified_yes">Yes</label>
             <input type="radio" id="fmcsar_disqualified_no" name="Under [FMCSR 391.15], are you currently disqualified from driving a commercial motor vehicle? [49 CFR 391.15]" value="no">
             <label for="fmcsar_disqualified_no">No</label><br><br>
+
+            <div id="explain_one" style="display: none;">
+                <label for="fmcsar_disqualified_explain">Explain:</label><br>
+                <textarea id="fmcsar_disqualified_explain" name="Under [FMCSR 391.15], are you currently disqualified from driving a commercial motor vehicle? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="fmcsar_suspended_revoked">Has your license, permit, or privilege to drive ever been suspended or revoked for any reason? [49 CFR 391.21(b)(9)]</label><br>
             <input type="radio" id="fmcsar_suspended_revoked_yes" name="Has your license, permit, or privilege to drive ever been suspended or revoked for any reason? [49 CFR 391.21(b)(9)]" value="yes" required>
@@ -1266,11 +1331,25 @@
             <input type="radio" id="fmcsar_suspended_revoked_no" name="Has your license, permit, or privilege to drive ever been suspended or revoked for any reason? [49 CFR 391.21(b)(9)]" value="no">
             <label for="fmcsar_suspended_revoked_no">No</label><br><br>
 
+            <div id="explain_two" style="display: none;">
+                <label for="fmcsar_suspended_revoked_explain">Explain:</label><br>
+                <textarea id="fmcsar_suspended_revoked_explain" name="Has your license, permit, or privilege to drive ever been suspended or revoked for any reason? [49 CFR 391.21(b)(9)] Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="fmcsar_denied_license">Have you ever been denied a license, permit, or privilege to operate a motor vehicle? [49CFR 391.21(b)(9)]</label><br>
             <input type="radio" id="fmcsar_denied_license_yes" name="Have you ever been denied a license, permit, or privilege to operate a motor vehicle? [49CFR 391.21(b)(9)]" value="yes" required>
             <label for="fmcsar_denied_license_yes">Yes</label>
             <input type="radio" id="fmcsar_denied_license_no" name="Have you ever been denied a license, permit, or privilege to operate a motor vehicle? [49CFR 391.21(b)(9)]" value="no">
             <label for="fmcsar_denied_license_no">No</label><br><br>
+
+            <div id="explain_three" style="display: none;">
+                <label for="fmcsar_denied_license_explain">Explain:</label><br>
+                <textarea id="fmcsar_denied_license_explain" name="Have you ever been denied a license, permit, or privilege to operate a motor vehicle? [49CFR 391.21(b)(9)] Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="fmcsar_drug_test">Within the past two years, have you tested positive, or refused to test, on a pre-employment drug or alcohol test by an employer to whom you applied, but did not obtain, safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules? [49 CFR 40.25(j)]</label><br>
             <input type="radio" id="fmcsar_drug_test_yes" name="Within the past two years, have you tested positive, or refused to test, on a pre-employment drug or alcohol test by an employer to whom you applied, but did not obtain, safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules? [49 CFR 40.25(j)]" value="yes" required>
@@ -1278,13 +1357,26 @@
             <input type="radio" id="fmcsar_drug_test_no" name="Within the past two years, have you tested positive, or refused to test, on a pre-employment drug or alcohol test by an employer to whom you applied, but did not obtain, safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules? [49 CFR 40.25(j)]" value="no">
             <label for="fmcsar_drug_test_no">No</label><br><br>
 
+            <div id="explain_four" style="display: none;">
+                <label for="fmcsar_drug_test_explain">Explain:</label><br>
+                <textarea id="fmcsar_drug_test_explain" name="Within the past two years, have you tested positive, or refused to test, on a pre-employment drug or alcohol test by an employer to whom you applied, but did not obtain, safety-sensitive transportation work covered by DOT agency drug and alcohol testing rules? [49 CFR 40.25(j)] Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
 
-            <label>In the past three (3) years, have you ever been convicted of any of the following offenses? [49 CFR 391.15]</label><br><br>
+            <!--------------------------------------------------------->
+
+            <label style="color: rgb(186, 24, 27); text-transform: uppercase;">In the past three (3) years, have you ever been convicted of any of the following offenses? [49 CFR 391.15]</label><br><br>
             <label for="fmcsar_bac_conviction">Driving a commercial motor vehicle with a blood alcohol concentration (BAC) of .04 percent or more?</label><br>
             <input type="radio" id="fmcsar_bac_conviction_yes" name="Driving a commercial motor vehicle with a blood alcohol concentration (BAC) of .04 percent or more?" value="yes" required>
             <label for="fmcsar_bac_conviction_yes">Yes</label>
             <input type="radio" id="fmcsar_bac_conviction_no" name="Driving a commercial motor vehicle with a blood alcohol concentration (BAC) of .04 percent or more?" value="no">
             <label for="fmcsar_bac_conviction_no">No</label><br><br>
+
+            <div id="explain_five" style="display: none;">
+                <label for="fmcsar_bac_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_bac_conviction_explain" name="Driving a commercial motor vehicle with a blood alcohol concentration (BAC) of .04 percent or more? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="fmcsar_dui_conviction">Driving under the influence of alcohol, as prescribed by state law?</label><br>
             <input type="radio" id="fmcsar_dui_conviction_yes" name="Driving under the influence of alcohol, as prescribed by state law?" value="yes" required>
@@ -1292,23 +1384,51 @@
             <input type="radio" id="fmcsar_dui_conviction_no" name="Driving under the influence of alcohol, as prescribed by state law?" value="no">
             <label for="fmcsar_dui_conviction_no">No</label><br><br>
 
+            <div id="explain_six" style="display: none;">
+                <label for="fmcsar_dui_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_dui_conviction_explain" name="Driving under the influence of alcohol, as prescribed by state law? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="fmcsar_refusal_conviction">Refusal to undergo drug and alcohol testing as required by any jurisdiction for the enforcement of Federal Motor Carrier Safety Act regulations?</label><br>
             <input type="radio" id="fmcsar_refusal_conviction_yes" name="Refusal to undergo drug and alcohol testing as required by any jurisdiction for the enforcement of Federal Motor Carrier Safety Act regulations?" value="yes" required>
             <label for="fmcsar_refusal_conviction_yes">Yes</label>
             <input type="radio" id="fmcsar_refusal_conviction_no" name="Refusal to undergo drug and alcohol testing as required by any jurisdiction for the enforcement of Federal Motor Carrier Safety Act regulations?" value="no">
             <label for="fmcsar_refusal_conviction_no">No</label><br><br>
 
-            <label for="fmcsar_substance_conviction">Driving a commercial motor vehicle under the influence of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, an amphetamine, a narcotic drug, a formulation of an amphetamine, or a derivative of a narcotic drug) ?</label><br>
+            <div id="explain_seven" style="display: none;">
+                <label for="fmcsar_refusal_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_refusal_conviction_explain" name="Refusal to undergo drug and alcohol testing as required by any jurisdiction for the enforcement of Federal Motor Carrier Safety Act regulations? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
+            <label for="fmcsar_substance_conviction">Driving a commercial motor vehicle under the influence of any drug identified in [21 CFR 1308.11] or any other substance such as amphetamine, a narcotic, or any other habit forming drug ?</label><br>
             <input type="radio" id="fmcsar_substance_conviction_yes" name="Driving a commercial motor vehicle under the influence of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, an amphetamine, a narcotic drug, a formulation of an amphetamine, or a derivative of a narcotic drug) ?" value="yes" required>
             <label for="fmcsar_substance_conviction_yes">Yes</label>
             <input type="radio" id="fmcsar_substance_conviction_no" name="Driving a commercial motor vehicle under the influence of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, an amphetamine, a narcotic drug, a formulation of an amphetamine, or a derivative of a narcotic drug) ?" value="no">
             <label for="fmcsar_substance_conviction_no">No</label><br><br>
 
-            <label for="fmcsar_possession_conviction">Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier) ?</label><br>
+            <div id="explain_eight" style="display: none;">
+                <label for="fmcsar_substance_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_substance_conviction_explain" name="Driving a commercial motor vehicle under the influence of any drug identified in [21 CFR 1308.11] or any other substance such as amphetamine, a narcotic, or any other habit forming drug ? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
+            <label for="fmcsar_possession_conviction">Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier) ?</label><br>
             <input type="radio" id="fmcsar_possession_conviction_yes" name="Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier) ?" value="yes" required>
             <label for="fmcsar_possession_conviction_yes">Yes</label>
             <input type="radio" id="fmcsar_possession_conviction_no" name="Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Schedule I identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier) ?" value="no">
             <label for="fmcsar_possession_conviction_no">No</label><br><br>
+
+            <div id="explain_nine" style="display: none;">
+                <label for="fmcsar_possession_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_possession_conviction_explain" name="Transportation, possession, or unlawful use of any [21 C.F.R. 1308.11] (Identified controlled substance, amphetamines, narcotic drugs, formulations of an amphetamine, or derivatives of narcotic drugs while you were on duty driving for a motor carrier) ? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="fmcsar_accident_leave_conviction">Leaving the scene of an accident while operating a commercial motor vehicle?</label><br>
             <input type="radio" id="fmcsar_accident_leave_conviction_yes" name="Leaving the scene of an accident while operating a commercial motor vehicle?" value="yes" required>
@@ -1316,11 +1436,23 @@
             <input type="radio" id="fmcsar_accident_leave_conviction_no" name="Leaving the scene of an accident while operating a commercial motor vehicle?" value="no">
             <label for="fmcsar_accident_leave_conviction_no">No</label><br><br>
 
+            <div id="explain_ten" style="display: none;">
+                <label for="fmcsar_accident_leave_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_accident_leave_conviction_explain" name="Leaving the scene of an accident while operating a commercial motor vehicle? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="fmcsar_other_felony_conviction">Or any other felony involving the use of a commercial motor vehicle?</label><br>
             <input type="radio" id="fmcsar_other_felony_conviction_yes" name="Or any other felony involving the use of a commercial motor vehicle?" value="yes" required>
             <label for="fmcsar_other_felony_conviction_yes">Yes</label>
             <input type="radio" id="fmcsar_other_felony_conviction_no" name="Or any other felony involving the use of a commercial motor vehicle?" value="no">
             <label for="fmcsar_other_felony_conviction_no">No</label><br><br>
+
+            <div id="explain_eleven" style="display: none;">
+                <label for="fmcsar_other_felony_conviction_explain">Explain:</label><br>
+                <textarea id="fmcsar_other_felony_conviction_explain" name="Or any other felony involving the use of a commercial motor vehicle? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
 
         </fieldset>
 
@@ -1701,6 +1833,11 @@
             <label for="moving_violations_yes">Yes</label>
             <input type="radio" id="moving_violations_no" name="Have you had any moving violations or traffic convictions in the past 3 years?" value="no">
             <label for="moving_violations_no">No</label><br><br>
+
+            <div id="explain_twelve" style="display: none;">
+                <label for="moving_violations_explain">Explain:</label><br>
+                <textarea id="moving_violations_explain" name="Have you had any moving violations or traffic convictions in the past 3 years? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
         </fieldset>
 
 <!--------------------------------------------------------->
@@ -1714,11 +1851,25 @@
             <input type="radio" id="convicted_of_crime_no" name="Have you ever been convicted of a crime?" value="no">
             <label for="convicted_of_crime_no">No</label><br><br>
 
+            <div id="explain_thirteen" style="display: none;">
+                <label for="convicted_of_crime_explain">Explain:</label><br>
+                <textarea id="convicted_of_crime_explain" name="Have you ever been convicted of a crime? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="deferred_prosecutions">Do you have any deferred prosecutions?</label><br>
             <input type="radio" id="deferred_prosecutions_yes" name="Do you have any deferred prosecutions?" value="yes" required>
             <label for="deferred_prosecutions_yes">Yes</label>
             <input type="radio" id="deferred_prosecutions_no" name="Do you have any deferred prosecutions?" value="no">
             <label for="deferred_prosecutions_no">No</label><br><br>
+
+            <div id="explain_fourteen" style="display: none;">
+                <label for="deferred_prosecutions_explain">Explain:</label><br>
+                <textarea id="deferred_prosecutions_explain" name="Do you have any deferred prosecutions? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="criminal_charges_pending">Do you have criminal charges pending?</label><br>
             <input type="radio" id="criminal_charges_pending_yes" name="Do you have criminal charges pending?" value="yes" required>
@@ -1726,11 +1877,25 @@
             <input type="radio" id="criminal_charges_pending_no" name="Do you have criminal charges pending?" value="no">
             <label for="criminal_charges_pending_no">No</label><br><br>
 
+            <div id="explain_fifteen" style="display: none;">
+                <label for="criminal_charges_pending_explain">Explain:</label><br>
+                <textarea id="criminal_charges_pending_explain" name="Do you have criminal charges pending? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="felony_conviction">Have you ever pled "guilty" to, been convicted of, or pled "no contest" to a felony?</label><br>
             <input type="radio" id="felony_conviction_yes" name="Have you ever pled guilty to, been convicted of, or pled no contest to a felony?" value="yes" required>
             <label for="felony_conviction_yes">Yes</label>
             <input type="radio" id="felony_conviction_no" name="Have you ever pled guilty to, been convicted of, or pled no contest to a felony?" value="no">
             <label for="felony_conviction_no">No</label><br><br>
+
+            <div id="explain_sixteen" style="display: none;">
+                <label for="felony_conviction_explain">Explain:</label><br>
+                <textarea id="felony_conviction_explain" name="Have you ever pled guilty to, been convicted of, or pled no contest to a felony? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
 
             <label for="ministers_permit">If you have any felony convictions, do you currently hold a minister's permit to enter or exit Canada?</label><br>
             <input type="radio" id="ministers_permit_yes" name="If you have any felony convictions, do you currently hold a minister's permit to enter or exit Canada?" value="yes" required>
@@ -1738,11 +1903,23 @@
             <input type="radio" id="ministers_permit_no" name="If you have any felony convictions, do you currently hold a minister's permit to enter or exit Canada?" value="no">
             <label for="ministers_permit_no">No</label><br><br>
 
+            <div id="explain_seventeen" style="display: none;">
+                <label for="ministers_permit_explain">Explain:</label><br>
+                <textarea id="ministers_permit_explain" name="If you have any felony convictions, do you currently hold a minister's permit to enter or exit Canada? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
+
+            <!--------------------------------------------------------->
+
             <label for="misdemeanor_conviction">Have you, within the last five years, pled "guilty" to, been convicted of, had prosecution deferred in connection with, or pled "no contest" to a misdemeanor?</label><br>
             <input type="radio" id="misdemeanor_conviction_yes" name="Have you, within the last five years, pled guilty to, been convicted of, had prosecution deferred in connection with, or pled no contest to a misdemeanor?" value="yes" required>
             <label for="misdemeanor_conviction_yes">Yes</label>
             <input type="radio" id="misdemeanor_conviction_no" name="Have you, within the last five years, pled guilty to, been convicted of, had prosecution deferred in connection with, or pled no contest to a misdemeanor?" value="no">
             <label for="misdemeanor_conviction_no">No</label><br><br>
+
+            <div id="explain_eighteen" style="display: none;">
+                <label for="misdemeanor_conviction_explain">Explain:</label><br>
+                <textarea id="misdemeanor_conviction_explain" name="Have you, within the last five years, pled guilty to, been convicted of, had prosecution deferred in connection with, or pled no contest to a misdemeanor? Explanation" rows="4" cols="50"></textarea><br><br>
+            </div>
 
         </fieldset>
 
