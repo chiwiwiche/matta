@@ -416,10 +416,10 @@
                 </select><br><br>
 
                 <label for="position">Position in the Company:</label><br>
-                <input type="text" id="position" name="Position in the Company:"><br><br>
+                <input type="text" id="position" name="Position in the Company:" required><br><br>
 
                 <label for="reason_for_leaving">Reason for leaving:</label><br>
-                <input type="text" id="reason_for_leaving" name="Reason for leaving:"><br><br>
+                <input type="text" id="reason_for_leaving" name="Reason for leaving:" required><br><br>
                 <!-- <select id="reason_for_leaving" name="Reason for leaving:" required>
                     <option value="">Select a reason</option>
                     <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
@@ -436,7 +436,7 @@
             </div>
 
             <label for="how_hear_about_us">How did you hear about us?</label><br>
-            <select id="how_hear_about_us" name="How did you hear about us?" required>
+            <select id="how_hear_about_us" name="How did you hear about us?">
                 <option value="">Select an option</option>
                 <option value="Online search">Online search</option>
                 <option value="Social media">Social media</option>
@@ -459,7 +459,7 @@
             <legend>EXPERIENCE AND QUALIFICATIONS</legend>
 
             <label for="years_experience">Years of experience as a truck driver:</label><br>
-            <input type="tel" id="years_experience" name="Years of experience as a truck driver:" min="0" required><br><br>
+            <input type="tel" id="years_experience" name="Years of experience as a truck driver:" min="0"><br><br>
 
             <label for="Experience_in_types_of_vehicles_operated">Types of vehicles operated:</label><br>
             <input type="text" id="Experience_in_types_of_vehicles_operated" name="Types of vehicles operated:"><br><br>
@@ -497,7 +497,7 @@
             <label for="truck_option_11_one">Other</label><br><br> -->
 
             <label>Have you ever been involved in an accident while operating a commercial vehicle?</label><br>
-            <input type="radio" id="accident_yes" name="Have you ever been involved in an accident while operating a commercial vehicle?" value="yes" required>
+            <input type="radio" id="accident_yes" name="Have you ever been involved in an accident while operating a commercial vehicle?" value="yes">
             <label for="accident_yes">Yes</label>
             <input type="radio" id="accident_no" name="Have you ever been involved in an accident while operating a commercial vehicle?" value="no">
             <label for="accident_no">No</label><br><br>
@@ -528,8 +528,8 @@
                     <input type="text" id="company_name_one" name="Employment History (Recent Record): Company Name" required><br><br>
                 
                     <label for="employment_dates_one">Employment Dates:</label><br>
-                    <input type="date" id="start_date_one" name="Employment History (Recent Record): Start Date" required> -
-                    <input type="date" id="end_date_one" name="Employment History (Recent Record): End Date" required><br><br>
+                    <input type="date" id="start_date_one" name="Employment History (Recent Record): Start Date"> -
+                    <input type="date" id="end_date_one" name="Employment History (Recent Record): End Date"><br><br>
                 
                     <label for="company_history_address_one">Company Address:</label><br>
                     <input type="text" id="company_history_address_one" name="Employment History (Recent Record): Company Address" required><br><br>
@@ -615,7 +615,7 @@
 
 
                         <label for="Employment_History_Recent_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
-                        <input type="text" id="Employment_History_Recent_Record:_Most_common_truck_driven" name="Employment History (Recent Record): Most common truck driven" required><br><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_truck_driven" name="Employment History (Recent Record): Most common truck driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_truck_driven_1_one" name="Employment_History_Recent_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_one">Box truck</label><br>
@@ -636,7 +636,7 @@
 
                 
                         <label for="Employment_History_Recent_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
-                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_driven" name="Employment History (Recent Record): Most common trailer driven" required><br><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_driven" name="Employment History (Recent Record): Most common trailer driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_driven_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_one">Beverage trailer</label><br>
@@ -697,7 +697,7 @@
                              -->
 
                         <label for="Employment_History_Recent_Record:_Most_common_trailer_length">Trailer length:</label><br>
-                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_length" name="Employment History (Recent Record): Trailer length" required><br><br>
+                        <input type="text" id="Employment_History_Recent_Record:_Most_common_trailer_length" name="Employment History (Recent Record): Trailer length"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_one" name="Employment_History_Recent_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_one">16 ft</label><br>
@@ -727,35 +727,35 @@
                     <legend class="legend__inside__legend">In-Between Record</legend>
                 
                     <label for="company_name_two">Company Name:</label><br>
-                    <input type="text" id="company_name_two" name="Employment History (In-Between Record): Company Name:" required><br><br>
+                    <input type="text" id="company_name_two" name="Employment History (In-Between Record): Company Name:"><br><br>
                 
                     <label for="employment_dates_two">Employment Dates:</label><br>
-                    <input type="date" id="start_date_two" name="Employment History (In-Between Record): Start Date" required> -
-                    <input type="date" id="end_date_two" name="Employment History (In-Between Record): End Date" required><br><br>
+                    <input type="date" id="start_date_two" name="Employment History (In-Between Record): Start Date"> -
+                    <input type="date" id="end_date_two" name="Employment History (In-Between Record): End Date"><br><br>
                 
                     <label for="company_history_address_two">Company Address:</label><br>
-                    <input type="text" id="company_history_address_two" name="Employment History (In-Between Record): Company Address" required><br><br>
+                    <input type="text" id="company_history_address_two" name="Employment History (In-Between Record): Company Address"><br><br>
                 
                     <label for="company_history_city_two">Company City:</label><br>
-                    <input type="text" id="company_history_city_two" name="Employment History (In-Between Record): Company City" required><br><br>
+                    <input type="text" id="company_history_city_two" name="Employment History (In-Between Record): Company City"><br><br>
                 
                     <label for="company_history_state_two">Company State:</label><br>
-                    <input type="text" id="company_history_state_two" name="Employment History (In-Between Record): Company State" required><br><br>
+                    <input type="text" id="company_history_state_two" name="Employment History (In-Between Record): Company State"><br><br>
                 
                     <label for="company_history_zip_code_two">Company Zip Code:</label><br>
                     <input type="tel" id="company_history_zip_code_two" name="Employment History (In-Between Record): Company Zip Code"><br><br>
                 
                     <label for="company_history_country_two">Company Country:</label><br>
-                    <input type="text" id="company_history_country_two" name="Employment History (In-Between Record): Company Country" required><br><br>
+                    <input type="text" id="company_history_country_two" name="Employment History (In-Between Record): Company Country"><br><br>
                 
                     <label for="company_history_phone_two">Company Phone:</label><br>
-                    <input type="tel" id="company_history_phone_two" name="Employment History (In-Between Record): Company Phone" required><br><br>
+                    <input type="tel" id="company_history_phone_two" name="Employment History (In-Between Record): Company Phone"><br><br>
                 
                     <label for="company_history_position_two">Position in the company:</label><br>
-                    <input type="text" id="company_history_position_two" name="Employment History (In-Between Record): Position in the company" required><br><br>
+                    <input type="text" id="company_history_position_two" name="Employment History (In-Between Record): Position in the company"><br><br>
                 
                     <label for="company_history_reason_leaving_two">Reason for leaving:</label><br>
-                    <input type="text" id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving" required><br><br>
+                    <input type="text" id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving"><br><br>
                     <!-- <select id="company_history_reason_leaving_two" name="Employment History (In-Between Record): Reason for leaving" required>
                         <option value="">Select a reason</option>
                         <option value="Dissatisfaction with salary or benefits">Dissatisfaction with salary or benefits</option>
@@ -771,7 +771,7 @@
                     </select><br><br> -->
                 
                     <label>Were you terminated/discharged/laid off?</label><br>
-                    <input type="radio" id="termination_yes_two" name="Employment History (In-Between Record): Were you terminated/discharged/laid off?" value="yes" required>
+                    <input type="radio" id="termination_yes_two" name="Employment History (In-Between Record): Were you terminated/discharged/laid off?" value="yes">
                     <label for="termination_yes_two">Yes</label>
                     <input type="radio" id="termination_no_two" name="Employment History (In-Between Record): Were you terminated/discharged/laid off?" value="no">
                     <label for="termination_no_two">No</label><br><br>
@@ -782,13 +782,13 @@
                     </div>
                 
                     <label>May we contact this employer at this time?</label><br>
-                    <input type="radio" id="contact_employer_yes_two" name="Employment History (In-Between Record): May we contact this employer at this time?" value="yes" required>
+                    <input type="radio" id="contact_employer_yes_two" name="Employment History (In-Between Record): May we contact this employer at this time?" value="yes">
                     <label for="contact_employer_yes_two">Yes</label>
                     <input type="radio" id="contact_employer_no_two" name="Employment History (In-Between Record): May we contact this employer at this time?" value="no">
                     <label for="contact_employer_no_two">No</label><br><br>
                 
                     <label>Did you operate a commercial motor vehicle?</label><br>
-                    <input type="radio" id="commercial_vehicle_yes_two" name="Employment History (In-Between Record): Did you operate a commercial motor vehicle?" value="yes" required>
+                    <input type="radio" id="commercial_vehicle_yes_two" name="Employment History (In-Between Record): Did you operate a commercial motor vehicle?" value="yes">
                     <label for="commercial_vehicle_yes_two">Yes</label>
                     <input type="radio" id="commercial_vehicle_no_two" name="Employment History (In-Between Record): Did you operate a commercial motor vehicle?" value="no">
                     <label for="commercial_vehicle_no_two">No</label><br><br>
@@ -811,7 +811,7 @@
 
 
                         <label for="Employment_History_In-Between_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
-                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_truck_driven" name="Employment History (In-Between Record): Most common truck driven" required><br><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_truck_driven" name="Employment History (In-Between Record): Most common truck driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_truck_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_two">Box truck</label><br>
@@ -832,7 +832,7 @@
 
                 
                         <label for="Employment_History_In-Between_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
-                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_driven" name="Employment History (In-Between Record): Most common trailer driven" required><br><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_driven" name="Employment History (In-Between Record): Most common trailer driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_driven_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_two">Beverage trailer</label><br>
@@ -893,7 +893,7 @@
                             
 
                         <label for="Employment_History_In-Between_Record:_Most_common_trailer_length">Trailer length:</label><br>
-                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_length" name="Employment History (In-Between Record): Most common trailer length" required><br><br>
+                        <input type="text" id="Employment_History_In-Between_Record:_Most_common_trailer_length" name="Employment History (In-Between Record): Most common trailer length"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_two" name="Employment_History_In-Between_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_two">16 ft</label><br>
@@ -1008,7 +1008,7 @@
 
 
                         <label for="Employment_History_Older_Record:_Most_common_truck_driven">Most common truck driven:</label><br>
-                        <input type="text" id="Employment_History_Older_Record:_Most_common_truck_driven" name="Employment History (Older Record): Most common truck driven" required><br><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_truck_driven" name="Employment History (Older Record): Most common truck driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_truck_driven_1_three" name="Employment_History_Older_Record:_Most_common_truck_driven[]" value="Box truck">
                         <label for="common_truck_driven_1_three">Box truck</label><br>
@@ -1029,7 +1029,7 @@
 
                 
                         <label for="Employment_History_Older_Record:_Most_common_trailer_driven">Most common trailer driven:</label><br>
-                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_driven" name="Employment History (Older Record): Most common trailer driven" required><br><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_driven" name="Employment History (Older Record): Most common trailer driven"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_driven_1_three" name="Employment_History_Older_Record:_Most_common_trailer_driven[]" value="Beverage trailer">
                         <label for="common_trailer_driven_1_three">Beverage trailer</label><br>
@@ -1090,7 +1090,7 @@
                             
 
                         <label for="Employment_History_Older_Record:_Most_common_trailer_length">Trailer length:</label><br>
-                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_length" name="Employment History (Older Record): Most common Trailer length" required><br><br>
+                        <input type="text" id="Employment_History_Older_Record:_Most_common_trailer_length" name="Employment History (Older Record): Most common Trailer length"><br><br>
 
                         <!-- <input type="checkbox" id="common_trailer_length_driven_option_1_three" name="Employment_History_Older_Record:_Most_common_trailer_length[]" value="16 ft">
                         <label for="common_trailer_length_driven_option_1_three">16 ft</label><br>
@@ -1127,14 +1127,14 @@
                 <legend class="legend__inside__legend">Trucking School</legend>
 
                 <label for="school">School Name:</label><br>
-                <input type="text" id="school" name="Trucking School Name" required><br><br>
+                <input type="text" id="school" name="Trucking School Name"><br><br>
 
                 <label for="school_phone">School Phone:</label><br>
                 <input type="tel" id="school_phone" name="Trucking School Phone"><br><br>
 
                 <label for="education_dates">Start and End Date:</label><br>
-                <input type="date" id="education_start_date" name="Trucking School Start Date" required>
-                <input type="date" id="education_end_date" name="Trucking School End Date" required><br><br>
+                <input type="date" id="education_start_date" name="Trucking School Start Date">
+                <input type="date" id="education_end_date" name="Trucking School End Date"><br><br>
 
 
                 <label for="School Country:">School Country:</label><br>
@@ -1471,7 +1471,7 @@
                     <legend class="legend__inside__legend">Recent Record</legend>
 
                     <label for="accident_incident_one">Were you involved in any accidents/incidents with any vehicle in the last year (even if not at fault)?</label><br>
-                    <input type="radio" id="accident_incident_yes_one" name="Accident Record (Recent Record): Were you involved in any accidents/incidents with any vehicle in the last year (even if not at fault)?" value="yes" required>
+                    <input type="radio" id="accident_incident_yes_one" name="Accident Record (Recent Record): Were you involved in any accidents/incidents with any vehicle in the last year (even if not at fault)?" value="yes">
                     <label for="accident_incident_yes_one">Yes</label>
                     <input type="radio" id="accident_incident_no_one" name="Accident Record (Recent Record): Were you involved in any accidents/incidents with any vehicle in the last year (even if not at fault)?" value="no">
                     <label for="accident_incident_no_one">No</label><br><br>
@@ -1591,7 +1591,7 @@
                     <legend class="legend__inside__legend">Old Record</legend>
 
                     <label for="accident_incident_two">Were you involved in any accidents/incidents with any vehicle in the last 3 years (even if not at fault)?</label><br>
-                    <input type="radio" id="accident_incident_yes_two" name="Accident Record (Old Record): Were you involved in any accidents/incidents with any vehicle in the last 3 years (even if not at fault)?" value="yes" required>
+                    <input type="radio" id="accident_incident_yes_two" name="Accident Record (Old Record): Were you involved in any accidents/incidents with any vehicle in the last 3 years (even if not at fault)?" value="yes">
                     <label for="accident_incident_yes_two">Yes</label>
                     <input type="radio" id="accident_incident_no_two" name="Accident Record (Old Record): Were you involved in any accidents/incidents with any vehicle in the last 3 years (even if not at fault)?" value="no">
                     <label for="accident_incident_no_two">No</label><br><br>
@@ -1711,7 +1711,7 @@
                     <legend class="legend__inside__legend">Older Record</legend>
 
                     <label for="accident_incident_three">Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?</label><br>
-                    <input type="radio" id="accident_incident_yes_three" name="Accident Record (Older Record): Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?" value="yes" required>
+                    <input type="radio" id="accident_incident_yes_three" name="Accident Record (Older Record): Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?" value="yes">
                     <label for="accident_incident_yes_three">Yes</label>
                     <input type="radio" id="accident_incident_no_three" name="Accident Record (Older Record): Were you involved in any accidents/incidents with any vehicle in the last 5 years (even if not at fault)?" value="no">
                     <label for="accident_incident_no_three">No</label><br><br>
