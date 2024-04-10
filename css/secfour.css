@@ -1,20 +1,21 @@
 .secFour-wrapper{
-    /* background: red; */
     padding: 0 3rem;
     margin-top: var(--space-btw);
+    width: 100%;
 
 }
 .secFour-container{
-    /* background: green; */
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: center;
 }
 .secFour-left{
-    width: 50%;
-    /* background: yellow; */
+    width: 40%;
+    
+    height: 100%;
+    background: pink;
 }
-
 .secFour-left h2{
     font-size: var(--fs-xl);
     font-family: var(--ff-titles);
@@ -29,17 +30,165 @@
 .secFour-left p{
     line-height: 1.5;
 }
-
+.secFour-left-link{
+    margin-top: 2rem;
+}
+.secFour-left-link a{
+    background: var(--red-one);
+    color: white;
+    font-weight: var(--roboto700);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: var(--borders-two);
+}
+.secFour-left-link a:hover{
+    background: var(--red-three);
+}
 .secFour-right{
-    width: 50%;
+    width: 60%;
+    
+    height: 100%;
+    /* background: yellow; */
 }
-.secFour-right img{
-    width: 80%;
-    height: 90vh;
-    object-fit: cover;
-    border-top-right-radius: 20%;
-    /* border-bottom-right-radius: 50%; */
-    border-bottom-left-radius: 20%;
-    display: block;
-    margin:0 auto;
+.secFour-pics-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+   
+    
 }
+
+
+.secFour-pics-container-one{
+    background: url('../media/careers/build_a_career_with_us.webp') no-repeat center center/cover; 
+    /* background: red; */
+    width: calc(100% / 3);
+    height: 100vh;
+    translate: 0px -50px;
+}
+
+.secFour-pics-container-two{
+    background: url('../media/careers/best_place_to_work-jobs.webp') no-repeat center center/cover; 
+    /* background: green; */
+    width: calc(100% / 3);
+    height: 100vh;
+    translate: 0px 50px;
+}
+.secFour-pics-container-three{
+    background: url('../media/careers/work_with_us.webp') no-repeat center center/cover; 
+    /* background: blue; */
+    width: calc(100% / 3);
+    height: 100vh;
+    translate: 0px -20px;
+}
+
+
+
+/*************MEDIAQUERIES**************/
+
+@media (max-width: 1483px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 950px) {/*2 REM padding*/
+    .secFour-wrapper{
+        padding: 0 2rem;
+    
+    }
+
+    .secFour-container{
+        flex-direction: column-reverse;
+        gap: 4rem;
+        align-items: center;
+    }
+    .secFour-left{
+        width: 100%;
+    }
+    .secFour-right{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+    .secFour-wrapper{
+        padding: 0 0.2rem;
+    
+    }
+    .secFour-container{
+        gap: 2rem;
+    }
+    .secFour-pics-container{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid rgb(189, 189, 189);
+        padding: 1rem;
+       
+        
+    }
+    .secFour-pics-container-one{
+        /* background: red; */
+        /* width: 100%;
+        height: calc(100% / 3); */
+        flex: 1 1 0px;
+        translate: 0px 0px;
+        margin: 0 0 0 auto;
+        width: 100%;
+        height: auto;
+
+    }
+    
+    .secFour-pics-container-two{
+        background: url('../media/careers/best_place_to_work-jobs.webp') no-repeat top center/cover;
+        /* background: green; */
+        width: 100%;
+        height: auto;
+        flex: 1 1 0px;
+        translate: 0px 0px;
+      
+    }
+    .secFour-pics-container-three{
+        /* background: blue; */
+       
+        /* width: 100%;
+        height: calc(100% / 3); */
+        flex: 1 1 0px;
+        translate: 0px 0px;
+        margin: 0 0 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 455px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+/**************************************/ 

@@ -87,7 +87,7 @@
   align-self: center;
 }
 .slide__leftSide-info a:hover{
-  background: var(--red-two);
+  background: var(--red-three);
 }
 .slide.current:nth-child(1) .slide__content-wrapper .slide__leftSide .slide__leftSide-info,
 .slide.current:nth-child(2) .slide__content-wrapper .slide__leftSide .slide__leftSide-info,
