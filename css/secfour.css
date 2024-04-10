@@ -14,7 +14,7 @@
     width: 40%;
     
     height: 100%;
-    background: pink;
+    /* background: pink; */
 }
 .secFour-left h2{
     font-size: var(--fs-xl);
@@ -126,7 +126,7 @@
 
 @media (max-width: 576px) { /*1 REM padding*/
     .secFour-wrapper{
-        padding: 0 0.2rem;
+        padding: 0 1rem;
     
     }
     .secFour-container{
@@ -134,12 +134,13 @@
     }
     .secFour-pics-container{
         /* display: flex; */
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        height: 100vh;
-        border: 1px solid rgb(189, 189, 189);
-        padding: 1rem;
+        /* flex-direction: row; */
+        /* gap: 1rem; */
+        /* width: 100%; */
+        height: 80vh;
+        flex-wrap: wrap;
+        /* border: 1px solid rgb(189, 189, 189);
+        padding: 1rem; */
        
         
     }
@@ -150,18 +151,19 @@
         flex: 1 1 0px;
         translate: 0px 0px;
         margin: 0 0 0 auto;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
+        min-width: 50%;
 
     }
     
     .secFour-pics-container-two{
-        background: url('../media/careers/best_place_to_work-jobs.webp') no-repeat top center/cover;
         /* background: green; */
-        width: 100%;
+        /* width: 100%; */
         height: auto;
         flex: 1 1 0px;
         translate: 0px 0px;
+        min-width: 50%;
       
     }
     .secFour-pics-container-three{
@@ -172,7 +174,7 @@
         flex: 1 1 0px;
         translate: 0px 0px;
         margin: 0 0 0 auto;
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
 
