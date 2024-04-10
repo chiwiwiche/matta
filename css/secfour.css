@@ -34,7 +34,12 @@
     width: 50%;
 }
 .secFour-right img{
-    width: 100%;
+    width: 80%;
     height: 90vh;
     object-fit: cover;
+    border-top-right-radius: 20%;
+    /* border-bottom-right-radius: 50%; */
+    border-bottom-left-radius: 20%;
+    display: block;
+    margin:0 auto;
 }

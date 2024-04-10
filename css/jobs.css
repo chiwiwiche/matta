@@ -8,14 +8,15 @@
     width: 400px;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
 .job__driver__logo a{
     text-align: center;
     background: var(--grey-two);
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 1rem 1.2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.8rem 0.8rem;
     border-radius: 100%;
     color: var(--white-one);
 }
@@ -23,7 +24,7 @@
     background: var(--red-one);
 }
 .job__driver__logo a i{
-    font-size: var(--fs-sub-tittles);
+    font-size: 1.1rem;
     margin-bottom: 0.2rem;
 }
 .job__driver__logo a span{
@@ -232,4 +233,10 @@ canvas{
         padding: 1rem;
     }
 
+}
+
+@media (max-width: 455px) {
+    .job__driver__logo img{
+        width: 100%;
+    }
 }
