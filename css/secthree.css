@@ -1,102 +1,110 @@
 .parallax__wrapper {
-  /* background: url("../media/videos/mattas_logistics.mp4"); */
-  min-height: 500px;
-  height: 600px; 
+  height: 100%; 
   width: 100%;
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   margin-top: var(--space-btw);
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 75px 5px rgba(0,0,0,0.75) inset; */
-  /* padding: 0 3rem; */
-  /* background: green; */
   position: relative;
 }
 .parallax__container{
     width: 100%;
     height: 100%;
-    /* background: yellow; */
 }
 .parallax__container video{
     width: 100%;
-    height: 100%;
+    height: 80vh;
     object-fit: cover;
-    
-    /* z-index: 1; */
-
 }
-
 .video__background{
     background: rgba(0,0,0,0.75);
-    /* box-shadow: 0px 0px 75px 5px rgba(0,0,0,0.95) inset; */
-    /* background: red; */
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    
-    /* z-index: 9; */
+    flex-direction: column;
+    justify-content: center;
 }
-.video__leftSide h2{
-    font-family: var(--ff-titles);
-    /* font-weight: var(--roboto700); */
-    color: white;
-    font-size: 6rem;
+.video__leftSide{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-/* .parallax__title{
-  background: rgba(191, 8, 17, 0.5);
-  padding: 3rem 5rem;
-  border-radius: var(--borders);
-  border: 1px solid rgb(191, 8, 17);
+.footer__quotes-textOne{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
-.parallax__title h2{
-  font-size: var(--fs-xs);
+.footer__quotes-textOne p{  
   font-family: var(--ff-titles);
-  text-shadow: 1px 1px 0px #0c0c0c;
-  color: var(--snow-white);
-} */
+  font-size: var(--fs-xxl);
+  line-height: 110%;
+  color: white;
+  text-align: center;
+}
+.footer__quotes-textOne p span{  
+  font-family: var(--ff-titles);
+  font-size: var(--fs-xxl);
+  line-height: 100%;
+  color: #ffd900;
+}
+.video__rightSide{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.video__rightSide a{
+  background: var(--red-one);
+  color: var(--white-one);
+  font-size: 1.5rem;
+  font-weight: var(--roboto400);
+  padding: 1rem 1rem 1rem 0;
+  border-radius: var(--borders-two);
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: inline;
+}
+.video__rightSide a:hover{
+  background: var(--red-three);
+}
+.video__rightSide a i{
+  color: var(--white-one);
+  font-size: 2.2rem;
+  font-weight: var(--roboto700);
+  background: var(--red-three);
+  padding: 1rem;
+  border-top-left-radius: var(--borders-two);
+  border-bottom-left-radius: var(--borders-two);
+  display: inline;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+#spin:after {
+  content:"";
+  animation: spin 10s linear infinite;
+}
 
 
-.footer__quotes{
-    /* background: red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    border-bottom: 1px solid #4e4e4e;
-    border-top: 1px solid #4e4e4e;
-  }
-  .footer__quotes p{  
-    font-family: var(--ff-sub-titles);
-    font-size: var(--fs-xl);
-    line-height: 110%;
-  }
-  .footer__quotes p span{  
-    font-family: var(--ff-sub-titles);
-    font-size: var(--fs-xl);
-    line-height: 100%;
-  }
-  #spin {
-    color: var(--main-yellow);
-  }
-  #spin:after {
-    content:"";
-    animation: spin 10s linear infinite;
-  }
+@keyframes spin {
+  0% { content:"Call Us"; }
+  33% { content:"Text Us"; }
+  66% { content:"Contact Us"; }
+  100% { content:"Follow Us"; }
+  
+}
 
+@media (max-width: 350px) {
 
-  @keyframes spin {
-    0% { content:"Help"; }
-    33% { content:"Guidance or testimony"; }
-    66% { content:"Quotes"; }
-    100% { content:"Help"; }
+  .video__rightSide a{
+    font-size: 1.2rem;
     
   }
+  .video__rightSide a i{
+    font-size: 1.5rem;
+  }
+}

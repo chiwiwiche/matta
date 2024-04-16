@@ -64,7 +64,7 @@
   font-family: var(--ff-titles);
   font-size: var( --fs-xxl);
   font-weight: 600; 
-  color: #f9d423; 
+  color: #ffd900; 
 }
 .slide-text{
   color: var(--white-one);

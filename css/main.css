@@ -27,7 +27,7 @@
   --roboto400: 400;
   --roboto300: 300;
 
-  --fs-xxl: clamp(1rem, 4vw + 1rem, 12rem);
+  --fs-xxl: clamp(3rem, 6vw + 1rem, 12rem);
   --fs-xl: clamp(3rem, 4vw + 1rem, 10rem);
   --fs-xs: clamp(1rem, 1vw + 1rem, 6rem);
   --fs-s: clamp(1rem, 1vw + 1rem, 2rem);
