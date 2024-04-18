@@ -57,7 +57,6 @@
   justify-content: center;
   padding: 2rem 0;
 }
-
 .video__rightSide a{
   background: var(--red-one);
   color: var(--white-one);

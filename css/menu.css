@@ -36,7 +36,7 @@ nav{
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: var(--ff-titles);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .header .nav-links a:hover{
   color: var(--red-one);
