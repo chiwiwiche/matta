@@ -1,9 +1,6 @@
 .form__wrapper{
-    /* background:red; */
     margin-top: var(--space-btw);
-    
     padding: 0 3rem;
-    
 }
 .form__insideWrapp{
     display: flex;
@@ -14,18 +11,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    /* align-items: flex-start; */
 }
 .form__insideContainer{
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
-
-
 .form__image{
     flex: 1 1 0px;
-    
 }
 .form__image img{
     width: 100%;
@@ -35,16 +28,13 @@
     min-width: 450px;
 }
 form{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
-    
-
+    background: rgb(185, 185, 185);
+    padding: 1rem;
+    border-radius: var(--borders-two);
+    height: 100%;
 }
 .form__div{
     margin-bottom: 1.5rem;
-    background: rgb(185, 185, 185);
-    padding: 1rem;
     border-radius: var(--borders-two);
 }
 .form__div:nth-child(5){
@@ -52,13 +42,9 @@ form{
     background: none;
     padding: 0;
     border-radius: none;
-
 }
 .form__container{
-    /* background: green; */
     flex: 1 1 0px;
-    /* padding: 0 2rem; */
-    
 }
 label{
     margin-bottom: 0.5rem;
@@ -77,51 +63,36 @@ textarea::placeholder{
     color:rgb(197, 197, 197);
     font-style: oblique;
 }
-
 input[type=text] {
     width: 100%;
     padding: 0.8rem;
     outline: none;
     border: none;
     border-radius: var(--borders-two);
-    /* border-bottom: 1px solid rgb(124, 124, 124); */
-    /* min-width: 325px; */
     max-width: 500px;
     margin: 0 auto;
     display: block;
-    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-
 }
 input[type=tel] {
     width: 100%;
     padding: 0.8rem;
     outline: none;
     border: none;
-    /* border-bottom: 1px solid rgb(124, 124, 124); */
     border-radius: var(--borders-two);
-    /* min-width: 325px; */
     max-width: 500px;
     margin: 0 auto;
     display: block;
-    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
- 
 }
 input[type=email] {
     width: 100%;
     padding: 0.8rem;
     outline: none;
     border: none;
-    /* border-bottom: 1px solid rgb(124, 124, 124); */
     border-radius: var(--borders-two);
-    /* min-width: 325px; */
     max-width: 500px;
     margin: 0 auto;
     display: block;
-    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-    
-    
 }
-
 input[type=submit] {
     background: var(--red-one);
     padding: 1rem;
@@ -145,41 +116,23 @@ textarea{
     padding: 0.8rem;
     outline: none;
     border: none;
-    /* border-bottom: 1px solid rgb(124, 124, 124); */
     border-radius: var(--borders-two);
-    /* min-width: 325px; */
     max-width: 500px;
     margin: 0 auto;
-    display: block;
-
-    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-    
+    display: block;    
 }
 .word-art__container {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
     font-size: 48px; 
-    /* text-align: center; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* background: blue; */
-    /* width: 100%; */
-    /* flex: 1 1 0px; */
-    /* padding: 0 2rem 0 0.5rem;  */
-    /* margin-bottom: 2rem; */
-    
+    align-items: center;  
 }
 .word-art h2{
     font-family: var(--ff-titles);
     font-size: var(--fs-xl);
     text-align: center;
     line-height: 110%;
-    
 }
- 
 .word-art h2 span{
     font-family: var(--ff-titles);
     font-size: var(--fs-xl);
@@ -206,12 +159,13 @@ textarea{
 @media (max-width: 950px) {/*2 REM padding*/
 
     .form__wrapper{
-        
         padding: 0 2rem;
-        
     }
     .form__insideContainer{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .form__image{
+        height: 60vh;
     }
 }
 
@@ -221,19 +175,12 @@ textarea{
 
 @media (max-width: 576px) { /*1 REM padding*/
     .form__wrapper{
-        
         padding: 0;
-        
     }
     .form__insideWrapp{
         padding: 1rem;
         border-radius: 0;
     }
-    /* .form__div{
-     
-        background: rgb(182, 53, 53);
-        
-    } */
     .form__image img{
         min-width: 100%;
     }
