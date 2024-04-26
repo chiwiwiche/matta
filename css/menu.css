@@ -44,7 +44,7 @@ nav{
 .menu {
   display:none;
 }
-.header .menu button{
+.header .menu{
   margin-left: 20px;
   padding: 1rem;
   background: var(--red-two);
@@ -98,6 +98,9 @@ nav{
   top: 1rem;
   right: 1rem;
   font-size: 3rem;
+  /* z-index: 999; */
+  color: white;
+  cursor: pointer;
 }
 
 /**************************************************************************************************/
