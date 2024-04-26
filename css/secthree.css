@@ -60,8 +60,9 @@
 .video__rightSide a{
   background: var(--red-one);
   color: var(--white-one);
-  font-size: 1.5rem;
-  font-weight: var(--roboto400);
+  /* font-size: 1.5rem; */
+  font-weight: var(--roboto700);
+  letter-spacing: 2px;
   padding: 1rem 1rem 1rem 0;
   border-radius: var(--borders-two);
   text-transform: uppercase;
@@ -73,7 +74,7 @@
 }
 .video__rightSide a i{
   color: var(--white-one);
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   font-weight: var(--roboto700);
   background: var(--red-three);
   padding: 1rem;
